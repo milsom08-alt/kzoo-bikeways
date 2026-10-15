@@ -52,14 +52,42 @@
   .leaflet-popup-content h3{font-size:14px;margin:0 0 4px}
   .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;color:#fff;margin-bottom:6px}
   .leaflet-control-attribution{font-size:10px}
+  button.chip.on{background:var(--accent);color:#fff}
+  button.chip{white-space:nowrap}
+  @media (max-width:420px){ .title p{display:none} .title .wide{display:none} button.chip{padding:10px 10px} }
+  #routecard{position:fixed;z-index:1002;left:10px;bottom:max(10px,env(safe-area-inset-bottom));width:360px;
+    background:var(--panel);backdrop-filter:blur(8px);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px}
+  #routecard[hidden]{display:none}
+  @media (max-width:640px){ #routecard{left:0;right:0;bottom:0;width:auto;border-radius:16px 16px 0 0;
+    padding-bottom:max(14px,env(safe-area-inset-bottom))} }
+  #routecard .hd{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  #routecard .hd b{flex:1;font-size:15px}
+  #routecard .x{border:0;background:transparent;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:2px 6px}
+  #rstatus{font-size:14px;margin:4px 0 8px}
+  #rstatus.err{color:#c62828}
+  .seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:8px}
+  .seg button{flex:1;border:0;background:transparent;color:var(--fg);padding:8px 4px;font:600 12.5px system-ui,sans-serif;cursor:pointer}
+  .seg button+button{border-left:1px solid var(--line)}
+  .seg button.on{background:var(--accent);color:#fff}
+  .stats{display:flex;gap:14px;margin:4px 0 8px;font-size:13px;color:var(--muted)}
+  .stats b{display:block;font-size:17px;color:var(--fg)}
+  .acts{display:flex;gap:8px;flex-wrap:wrap}
+  .acts button{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:10px;padding:8px 10px;
+    font:600 13px system-ui,sans-serif;cursor:pointer}
+  .acts button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .acts button:disabled{opacity:.45;cursor:default}
+  .rnote{font-size:11.5px;color:var(--muted);margin:8px 0 0}
+  .pin{width:26px;height:26px;border-radius:50%;color:#fff;font:700 13px/22px system-ui,sans-serif;text-align:center;
+    border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
 </style>
 </head>
 <body>
 <div id="map" role="application" aria-label="Map of Kalamazoo region bikeways"></div>
 <header>
-  <div class="title"><h1>K'zoo Region Bikeways</h1><p>Updated October 2026 · tap a line for details</p></div>
+  <div class="title"><h1>K'zoo <span class="wide">Region </span>Bikeways</h1><p>Updated October 2026 · tap a line for details</p></div>
   <div class="spacer"></div>
   <button class="chip" id="locate" aria-label="Show my location">◎ Me</button>
+  <button class="chip" id="routebtn" aria-pressed="false">Route</button>
   <button class="chip" id="toggle" aria-expanded="false" aria-controls="panel">Layers</button>
 </header>
 <aside id="panel" hidden>
@@ -73,6 +101,25 @@
     <a href="data/Kzoo-Map-Oct2026-Layers.zip" download>Download layers for Google My Maps (zip)</a>
   </div>
 </aside>
+<section id="routecard" hidden aria-label="Route planner">
+  <div class="hd"><b>Plan a bike route</b><button class="x" id="rclose" aria-label="Close route planner">×</button></div>
+  <div class="seg" role="group" aria-label="Route style">
+    <button data-p="safety">Paths &amp; quiet roads</button>
+    <button data-p="trekking">Balanced</button>
+    <button data-p="fastbike">Road bike</button>
+  </div>
+  <p id="rstatus">Tap the map to set your start.</p>
+  <div class="stats" id="rstats" hidden>
+    <div><b id="sdist">–</b>miles</div><div><b id="sclimb">–</b>ft climbing</div><div><b id="spaths">–</b>on paths / lanes</div>
+  </div>
+  <div class="acts">
+    <button id="rmyloc">Start at my location</button>
+    <button id="rswap" disabled>Reverse</button>
+    <button id="rgpx" class="primary" disabled>Download GPX</button>
+    <button id="rclear">Clear</button>
+  </div>
+  <p class="rnote">Drag the A/B pins to adjust. Routes come from <a href="https://brouter.de" target="_blank" rel="noopener">BRouter</a> using OpenStreetMap, which may not include the newest trails yet. Check the route before you ride.</p>
+</section>
 <script src="vendor/leaflet/leaflet.js"></script>
 <script>
 (function(){
@@ -99,6 +146,13 @@
     return box;
   }
 
+  var routing = false;
+  function onShape(e, f, Ly){
+    L.DomEvent.stopPropagation(e);
+    if (routing){ addPoint(e.latlng); return; }
+    L.popup().setLatLng(e.latlng).setContent(popup(f, Ly.name, f.c)).openOn(map);
+  }
+
   fetch('data/bikeways.json').then(function(r){ return r.json(); }).then(function(data){
     var bounds = L.latLngBounds();
     data.layers.forEach(function(Ly){
@@ -115,13 +169,13 @@
                                  dashArray: dashed, lineCap:'round'});
           ll.forEach(function(p){ bounds.extend(p); });
         }
-        shape.bindPopup(function(){ return popup(f, Ly.name, f.c); });
+        shape.on('click', function(e){ onShape(e, f, Ly); });
         shape.addTo(all);
         if (f.new || coming){
           var s2 = typeof f.g[0] === 'number'
             ? L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1})
             : L.polyline(f.g.map(function(p){return [p[1],p[0]];}),{color:f.c,weight:6,opacity:.95,dashArray:dashed,lineCap:'round'});
-          s2.bindPopup(function(){ return popup(f, Ly.name, f.c); }); s2.addTo(nw);
+          s2.on('click', function(e){ onShape(e, f, Ly); }); s2.addTo(nw);
         }
       });
       var g = {name:Ly.name, color:Ly.color, dashed:!!dashed, all:all, nw:nw, count:Ly.features.length};
@@ -154,7 +208,10 @@
   function setPanel(open){ panel.hidden = !open; tg.setAttribute('aria-expanded', String(open)); }
   setPanel(window.innerWidth > 640);
   tg.addEventListener('click', function(){ setPanel(panel.hidden); });
-  map.on('click', function(){ if (window.innerWidth <= 640) setPanel(false); });
+  map.on('click', function(e){
+    if (routing){ addPoint(e.latlng); return; }
+    if (window.innerWidth <= 640) setPanel(false);
+  });
 
   var me = null;
   document.getElementById('locate').addEventListener('click', function(){
@@ -169,6 +226,128 @@
       map.setView(ll, Math.max(map.getZoom(), 15));
     }, function(){ alert('Could not get your location. Check that location access is allowed for this site.'); },
     {enableHighAccuracy:true, timeout:10000});
+  });
+
+  // ---------------- Route planner (BRouter) ----------------
+  var card = document.getElementById('routecard'), rbtn = document.getElementById('routebtn');
+  var statusEl = document.getElementById('rstatus'), statsEl = document.getElementById('rstats');
+  var gpxBtn = document.getElementById('rgpx'), swapBtn = document.getElementById('rswap');
+  var routePane = map.createPane('route'); routePane.style.zIndex = 450;
+  var pts = [], pins = [], routeLayer = null, routeCoords = null, req = 0, profile = 'safety';
+  try { profile = localStorage.getItem('kzRouteProfile') || 'safety'; } catch(e) {}
+  var segBtns = card.querySelectorAll('.seg button');
+  function showProfile(){ segBtns.forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-p') === profile); }); }
+  segBtns.forEach(function(b){ b.addEventListener('click', function(){
+    profile = b.getAttribute('data-p'); showProfile();
+    try { localStorage.setItem('kzRouteProfile', profile); } catch(e) {}
+    if (pts.length === 2) fetchRoute();
+  }); });
+  showProfile();
+
+  function setStatus(t, err){ statusEl.textContent = t; statusEl.className = err ? 'err' : ''; }
+  function openRouting(on){
+    routing = on; card.hidden = !on; rbtn.classList.toggle('on', on); rbtn.setAttribute('aria-pressed', String(on));
+    map.closePopup();
+    if (on && window.innerWidth <= 640) setPanel(false);
+    map.getContainer().style.cursor = on ? 'crosshair' : '';
+  }
+  rbtn.addEventListener('click', function(){ openRouting(!routing); });
+  document.getElementById('rclose').addEventListener('click', function(){ openRouting(false); });
+
+  function pinIcon(label, color){
+    return L.divIcon({className:'', html:'<div class="pin" style="background:'+color+'">'+label+'</div>', iconSize:[26,26], iconAnchor:[13,13]});
+  }
+  function drawPins(){
+    pins.forEach(function(p){ map.removeLayer(p); }); pins = [];
+    pts.forEach(function(ll, i){
+      var m = L.marker(ll, {draggable:true, icon: pinIcon(i ? 'B' : 'A', i ? '#c62828' : '#2e7d32'), keyboard:false}).addTo(map);
+      m.on('dragend', function(){ pts[i] = m.getLatLng(); if (pts.length === 2) fetchRoute(); });
+      pins.push(m);
+    });
+  }
+  function addPoint(ll){
+    if (pts.length < 2) pts.push(ll); else pts[1] = ll;
+    drawPins();
+    if (pts.length === 1) setStatus('Now tap where you want to go.');
+    else fetchRoute();
+  }
+  function clearRoute(){
+    req++; pts = []; drawPins(); routeCoords = null;
+    if (routeLayer){ map.removeLayer(routeLayer); routeLayer = null; }
+    statsEl.hidden = true; gpxBtn.disabled = true; swapBtn.disabled = true;
+    setStatus('Tap the map to set your start.');
+  }
+  document.getElementById('rclear').addEventListener('click', clearRoute);
+  swapBtn.addEventListener('click', function(){ if (pts.length === 2){ pts.reverse(); drawPins(); fetchRoute(); } });
+  document.getElementById('rmyloc').addEventListener('click', function(){
+    if (!navigator.geolocation){ setStatus('Location is not available on this device.', true); return; }
+    setStatus('Finding your location…');
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var ll = L.latLng(pos.coords.latitude, pos.coords.longitude);
+      pts[0] = ll; if (pts.length === 0) pts = [ll];
+      drawPins(); map.setView(ll, Math.max(map.getZoom(), 14));
+      if (pts.length === 2) fetchRoute(); else setStatus('Now tap where you want to go.');
+    }, function(){ setStatus('Could not get your location. Check that location access is allowed for this site.', true); },
+    {enableHighAccuracy:true, timeout:10000});
+  });
+
+  function classify(tags){
+    if (/highway=cycleway/.test(tags) || (/highway=(path|footway|track|pedestrian)/.test(tags) && /bicycle=(designated|yes)/.test(tags))) return 'path';
+    if (/cycleway(:left|:right|:both)?=(lane|track)/.test(tags)) return 'lane';
+    return 'road';
+  }
+  function fetchRoute(){
+    var my = ++req;
+    var ll = pts.map(function(p){ return p.lng.toFixed(5) + ',' + p.lat.toFixed(5); }).join('|');
+    var url = 'https://brouter.de/brouter?lonlats=' + ll + '&profile=' + profile + '&alternativeidx=0&format=geojson';
+    setStatus('Finding a route…'); gpxBtn.disabled = true;
+    var ctrl = window.AbortController ? new AbortController() : null;
+    var to = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 20000);
+    fetch(url, ctrl ? {signal: ctrl.signal} : {}).then(function(r){
+      return r.text().then(function(t){ if (!r.ok) throw new Error(t.slice(0, 200)); return JSON.parse(t); });
+    }).then(function(gj){
+      clearTimeout(to); if (my !== req) return;
+      var f = gj.features && gj.features[0]; if (!f) throw new Error('No route found');
+      var props = f.properties, coords = f.geometry.coordinates;
+      routeCoords = coords;
+      if (routeLayer) map.removeLayer(routeLayer);
+      var latlngs = coords.map(function(c){ return [c[1], c[0]]; });
+      routeLayer = L.layerGroup([
+        L.polyline(latlngs, {pane:'route', color:'#ffffff', weight:9, opacity:.95, interactive:false}),
+        L.polyline(latlngs, {pane:'route', color:'#1a237e', weight:5, opacity:.95, interactive:false})
+      ]).addTo(map);
+      var m = props.messages || [], h = m[0] || [], di = h.indexOf('Distance'), wi = h.indexOf('WayTags');
+      var tot = 0, good = 0;
+      for (var i = 1; i < m.length; i++){
+        var d = +m[i][di] || 0; tot += d;
+        if (classify(m[i][wi] || '') !== 'road') good += d;
+      }
+      var miles = (+props['track-length'] || tot) / 1609.344;
+      document.getElementById('sdist').textContent = miles.toFixed(miles < 10 ? 1 : 0);
+      document.getElementById('sclimb').textContent = Math.round((+props['filtered ascend'] || 0) * 3.281);
+      document.getElementById('spaths').textContent = tot ? Math.round(100 * good / tot) + '%' : '–';
+      statsEl.hidden = false; gpxBtn.disabled = false; swapBtn.disabled = false;
+      setStatus('Route ready. Tap the map to change the end point.');
+      if (!map.getBounds().contains(routeLayer.getLayers()[1].getBounds())) map.fitBounds(routeLayer.getLayers()[1].getBounds(), {padding:[30,30]});
+    }).catch(function(err){
+      clearTimeout(to); if (my !== req) return;
+      var msg = String(err && err.message || err);
+      setStatus(/abort/i.test(msg) ? 'The routing service took too long. Try again in a moment.'
+        : /not mapped|position not mapped/i.test(msg) ? 'One of the points is too far from a road or path. Tap closer to one.'
+        : 'Could not get a route right now. Try again, or move a pin.', true);
+    });
+  }
+  gpxBtn.addEventListener('click', function(){
+    if (!routeCoords) return;
+    var pts = routeCoords.map(function(c){
+      return '<trkpt lat="' + c[1].toFixed(6) + '" lon="' + c[0].toFixed(6) + '">' + (c.length > 2 ? '<ele>' + (+c[2]).toFixed(1) + '</ele>' : '') + '</trkpt>';
+    }).join('');
+    var gpx = '<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="K\'zoo Region Bikeways" xmlns="http://www.topografix.com/GPX/1/1">' +
+      '<trk><name>K\'zoo bike route</name><trkseg>' + pts + '</trkseg></trk></gpx>';
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([gpx], {type:'application/gpx+xml'}));
+    a.download = 'kzoo-bike-route.gpx'; document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
   });
 })();
 </script>
