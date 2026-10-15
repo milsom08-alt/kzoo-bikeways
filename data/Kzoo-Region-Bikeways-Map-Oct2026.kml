@@ -4961,6 +4961,15 @@
           <coordinates>-85.65610,42.27810,0</coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Vicksburg Tr SUP – north end to Portage city limit (added Oct 2026)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Existing – shown as an existing shared-use path in the KATS facilities data; the club map's Vicksburg Tr line started about 0.5 mi farther south.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Shared-use trail (Vicksburg Trail)&lt;br&gt;Fills the gap between the Austin Lake Trail's south end at the Portage city limit and the club map's Vicksburg Tr SUP. Drawn as a straight line along the old rail corridor (approximate).&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-sup</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.53113,42.15742,0 -85.52875,42.15079,0</coordinates>
+        </LineString>
+      </Placemark>
     </Folder>
     <Folder>
       <name>Bike Lane</name>
@@ -26660,12 +26669,22 @@
     <Folder>
       <name>Coming: Shared Use Pathways (planned / under construction)</name>
       <Placemark>
-        <name>Austin Lake Trail (Portage) – under construction, opens 2027</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction. Final land acquired Sept 2025; tree removal winter 2025–26; completion expected 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New paved shared-use trail, ~3 mi&lt;br&gt;Runs along the former rail corridor on the east side of Austin Lake, from Zylman Ave to Portage's southern city limit, linking toward Schoolcraft Twp. The exact alignment is not published in the data I could reach, so this is an approximate point. Portage CIP budget $3.0M (FY25-26).&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wkzo.com/2025/09/12/833228/"&gt;WKZO – Portage acquires final land for Austin Lake Trail (Sept 12, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://stories.opengov.com/portagemi/published/gqWUrtCEvJ"&gt;City of Portage 2024–2030 CIP – Bikeways &amp;amp; Trailways&lt;/a&gt;</description>
-        <styleUrl>#upd2026-csuppt</styleUrl>
-        <Point>
-          <coordinates>-85.53600,42.17700,0</coordinates>
-        </Point>
+        <name>Austin Lake Trail (Portage) – Zylman Ave to Nash Ave, under construction, opens 2027</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction. Final land acquired Sept 2025; tree removal winter 2025–26; completion expected 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New 10-ft asphalt trail with 2-ft shoulders, ~1.8 mi (Portage project 2024005.01)&lt;br&gt;Starts at the Zylman Ave / Coxs Dr roundabout sidewalk, follows Coxs Dr and East Shore Dr, then the old rail bed along the east side of Austin Lake to Nash Ave. Route traced from the city's Austin Lake Trail property control map (May 2024).&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wkzo.com/2025/09/12/833228/"&gt;WKZO – Portage acquires final land for Austin Lake Trail (Sept 12, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://stories.opengov.com/portagemi/published/gqWUrtCEvJ"&gt;City of Portage 2024–2030 CIP – Bikeways &amp;amp; Trailways&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.portagemi.gov/644/Park-Projects"&gt;City of Portage / Viridis – Austin Lake Trail Property Control Map (May 28, 2024)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-csup</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.55047,42.19338,0 -85.55053,42.19313,0 -85.55052,42.19158,0 -85.55049,42.19147,0 -85.55036,42.19138,0 -85.54859,42.19098,0 -85.54753,42.19067,0 -85.54622,42.19021,0 -85.54552,42.18990,0 -85.54536,42.18995,0 -85.54537,42.19039,0 -85.54526,42.19048,0 -85.54514,42.19041,0 -85.53994,42.18010,0 -85.53971,42.17963,0 -85.53965,42.17926,0 -85.53940,42.17899,0 -85.53805,42.17636,0 -85.53755,42.17526,0 -85.53687,42.17344,0 -85.53657,42.17238,0 -85.53653,42.17194,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Austin Lake Trail (Portage) – Nash Ave to Vicksburg Trail, under construction, opens 2027</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction. Final land acquired Sept 2025; tree removal winter 2025–26; completion expected 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New 10-ft asphalt trail with 2-ft shoulders, ~1.1 mi, including a boardwalk through the wetland (Portage project 2024005.02)&lt;br&gt;Follows the old rail bed south from Nash Ave to Portage's south city limit, where it connects to the existing Vicksburg Trail. Route traced from the city's Austin Lake Trail property control map (May 2024).&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wkzo.com/2025/09/12/833228/"&gt;WKZO – Portage acquires final land for Austin Lake Trail (Sept 12, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://stories.opengov.com/portagemi/published/gqWUrtCEvJ"&gt;City of Portage 2024–2030 CIP – Bikeways &amp;amp; Trailways&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.portagemi.gov/644/Park-Projects"&gt;City of Portage / Viridis – Austin Lake Trail Property Control Map (May 28, 2024)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-csup</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.53653,42.17194,0 -85.53633,42.17164,0 -85.53602,42.17088,0 -85.53337,42.16324,0 -85.53264,42.16130,0 -85.53259,42.16121,0 -85.53246,42.16114,0 -85.53093,42.16114,0 -85.53075,42.16107,0 -85.53071,42.16098,0 -85.53069,42.15896,0 -85.53113,42.15742,0</coordinates>
+        </LineString>
       </Placemark>
       <Placemark>
         <name>KRVT east – Galesburg to Augusta (approx. alignment)</name>
