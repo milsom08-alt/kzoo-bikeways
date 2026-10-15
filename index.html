@@ -157,51 +157,92 @@
     var bounds = L.latLngBounds();
     data.layers.forEach(function(Ly){
       var coming = COMING.test(Ly.name);
-      var dashed = coming ? '9 7' : null;
-      var all = L.layerGroup(), nw = L.layerGroup();
+      var dashed = !!coming;
+      var isSUP = (Ly.name === 'Shared Use Pathways');
+      var all = L.layerGroup(), nw = L.layerGroup(), under = L.layerGroup(), underNw = L.layerGroup();
       Ly.features.forEach(function(f){
-        var shape;
-        if (typeof f.g[0] === 'number'){
-          shape = L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1});
-        } else {
-          var ll = f.g.map(function(p){ return [p[1],p[0]]; });
-          shape = L.polyline(ll,{color:f.c, weight: Math.max(3, Math.min(6, f.w)) + (f.new?1.5:0), opacity:.92,
-                                 dashArray: dashed, lineCap:'round'});
-          ll.forEach(function(p){ bounds.extend(p); });
+        var isPt = typeof f.g[0] === 'number';
+        var ll = isPt ? null : f.g.map(function(p){ return [p[1],p[0]]; });
+        function make(bw, group, casingGroup){
+          var s;
+          if (isPt){
+            s = L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1});
+            track(s, {pt:true});
+          } else {
+            if (isSUP){   // white outline so paths stand out on top of other layers
+              var c = L.polyline(ll,{color:'#ffffff', opacity:.95, lineCap:'round', lineJoin:'round', interactive:false});
+              track(c, {bw:bw, casing:true}); c.addTo(casingGroup);
+            }
+            s = L.polyline(ll,{color:f.c, opacity:.95, lineCap:'round', lineJoin:'round'});
+            track(s, {bw:bw, dash:dashed});
+          }
+          s.on('click', function(e){ onShape(e, f, Ly); });
+          s.addTo(group);
         }
-        shape.on('click', function(e){ onShape(e, f, Ly); });
-        shape.addTo(all);
-        if (f.new || coming){
-          var s2 = typeof f.g[0] === 'number'
-            ? L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1})
-            : L.polyline(f.g.map(function(p){return [p[1],p[0]];}),{color:f.c,weight:6,opacity:.95,dashArray:dashed,lineCap:'round'});
-          s2.on('click', function(e){ onShape(e, f, Ly); }); s2.addTo(nw);
-        }
+        make(Math.max(3, Math.min(6, f.w)) + (f.new ? 1.5 : 0), all, under);
+        if (!isPt) ll.forEach(function(p){ bounds.extend(p); });
+        if (f.new || coming) make(6, nw, underNw);
       });
-      var g = {name:Ly.name, color:Ly.color, dashed:!!dashed, all:all, nw:nw, count:Ly.features.length};
+      var g = {name:Ly.name, color:Ly.color, dashed:dashed, all:all, nw:nw, under:under, underNw:underNw,
+               rank:rank(Ly.name), count:Ly.features.length};
       groups.push(g);
 
       var row = el('label',{'class':'row'});
       var cb = el('input',{type:'checkbox'}); cb.checked = true; g.cb = cb;
       var sw = el('span',{'class':'sw'+(dashed?' dash':'')}); sw.style.color = Ly.color; if (!dashed) sw.style.background = Ly.color;
+      if (isSUP) sw.style.boxShadow = '0 0 0 1.5px #fff, 0 0 0 2.5px rgba(0,0,0,.15)';
       row.appendChild(cb); row.appendChild(sw); row.appendChild(el('span',{'class':'n'}, Ly.name.replace(/^Coming: /,'')));
       row.appendChild(el('span',{'class':'c'}, String(Ly.features.length)));
       cb.addEventListener('change', render);
       document.getElementById(coming?'coming':'existing').appendChild(row);
     });
+    applyZoomStyle();
     render();
     if (window.innerWidth > 640 && bounds.isValid()) map.fitBounds(bounds,{padding:[20,20]});
   }).catch(function(){
     alert('Could not load the map data. Please reload the page.');
   });
 
+  // Draw order: lowest rank first, so shared-use paths end up on top (and win taps where lines overlap)
+  function rank(name){
+    if (name === 'Shared Use Pathways') return 100;
+    if (/^Coming: Shared Use/.test(name)) return 90;
+    if (name === 'Bike Lane') return 80;
+    if (/^Coming: Bike Lanes/.test(name)) return 70;
+    if (/^Construction Zone/.test(name)) return 65;
+    if (name === 'Bike Route') return 60;
+    if (name === 'Shoulders') return 50;
+    if (/^Coming: Paved Shoulders/.test(name)) return 45;
+    if (/^Unmarked/.test(name)) return 30;
+    return 20;
+  }
   function render(){
-    groups.forEach(function(g){
-      map.removeLayer(g.all); map.removeLayer(g.nw);
+    groups.forEach(function(g){ [g.all, g.nw, g.under, g.underNw].forEach(function(x){ map.removeLayer(x); }); });
+    groups.slice().sort(function(a,b){ return a.rank - b.rank; }).forEach(function(g){
       if (!g.cb.checked) return;
+      (onlyNew ? g.underNw : g.under).addTo(map);
       (onlyNew ? g.nw : g.all).addTo(map);
     });
   }
+
+  // Line widths scale with zoom so the map isn't a tangle of thick lines when zoomed out
+  var styled = [];
+  function track(layer, o){ o.layer = layer; styled.push(o); }
+  function zoomFactor(z){
+    return z >= 16 ? 1.15 : z >= 15 ? 1 : z >= 14 ? 0.9 : z >= 13 ? 0.75 : z >= 12 ? 0.6 : z >= 11 ? 0.45 : 0.35;
+  }
+  function applyZoomStyle(){
+    var k = zoomFactor(map.getZoom());
+    styled.forEach(function(o){
+      if (o.pt){ o.layer.setStyle({radius: Math.max(4.5, 8 * Math.min(1, k + 0.25)), weight: k < 0.6 ? 1.5 : 2}); return; }
+      var w = Math.max(1.2, o.bw * k);
+      if (o.casing){ o.layer.setStyle({weight: w + (k < 0.6 ? 2 : 3)}); return; }
+      var st = {weight: w};
+      if (o.dash) st.dashArray = Math.max(3, Math.round(9 * Math.max(k, 0.45))) + ' ' + Math.max(3, Math.round(7 * Math.max(k, 0.45)));
+      o.layer.setStyle(st);
+    });
+  }
+  map.on('zoomend', applyZoomStyle);
   document.getElementById('onlynew').addEventListener('change', function(e){ onlyNew = e.target.checked; render(); });
 
   var panel = document.getElementById('panel'), tg = document.getElementById('toggle');
