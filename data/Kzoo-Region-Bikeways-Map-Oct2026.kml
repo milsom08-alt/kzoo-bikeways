@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>K'zoo Region Bikeways Map</name>
-    <description>This is a map of existing non-motorized infrastructure in the Kalamazoo, MI, region. Updated December 2024; October 2026 update adds facilities opened since then (Portage St bike lanes, Fruit Belt Rail Trail, KL Ave path at US-131) plus three new layers: projects under construction, planned city/Portage bikeways and trails, and planned county paved shoulders. Items added in Oct 2026 carry a status and source in their description. Use this map - AT YOUR OWN RISK - to navigate streets and roads in the Kalamazoo region.  Have a great ride!</description>
+    <description>This is a map of existing non-motorized infrastructure in the Kalamazoo, MI, region. Updated December 2024; October 2026 update adds facilities opened since then (Portage St bike lanes, Fruit Belt Rail Trail, KL Ave path at US-131) plus new layers for coming projects (planned or under construction shared-use paths, bike lanes and paved shoulders, drawn in the same colors as the existing layers) and the Kalamazoo Ave construction zone. Items added in Oct 2026 carry a status and source in their description. Use this map - AT YOUR OWN RISK - to navigate streets and roads in the Kalamazoo region.  Have a great ride!</description>
     <Style id="line-0288D1-3519-nodesc-normal">
       <LineStyle>
         <color>ffd18802</color>
@@ -1048,30 +1048,36 @@
         </Icon>
       </IconStyle>
     </Style>
-    <Style id="upd2026-build">
+    <Style id="upd2026-zone">
       <LineStyle>
         <color>ff006dff</color>
         <width>5</width>
       </LineStyle>
     </Style>
-    <Style id="upd2026-buildpt">
+    <Style id="upd2026-csup">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="upd2026-csuppt">
       <IconStyle>
-        <color>ff006dff</color>
+        <color>ff5252ff</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
         </Icon>
       </IconStyle>
     </Style>
-    <Style id="upd2026-plan">
+    <Style id="upd2026-clane">
       <LineStyle>
-        <color>ff000000</color>
-        <width>3</width>
+        <color>ffd18802</color>
+        <width>4</width>
       </LineStyle>
     </Style>
-    <Style id="upd2026-shld">
+    <Style id="upd2026-cshld">
       <LineStyle>
-        <color>ff485579</color>
+        <color>ff2dc0fb</color>
         <width>4</width>
       </LineStyle>
     </Style>
@@ -26652,11 +26658,11 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>Under Construction / 2026 (not yet open)</name>
+      <name>Coming: Shared Use Pathways (planned / under construction)</name>
       <Placemark>
         <name>Austin Lake Trail (Portage) – under construction, opens 2027</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction. Final land acquired Sept 2025; tree removal winter 2025–26; completion expected 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New paved shared-use trail, ~3 mi&lt;br&gt;Runs along the former rail corridor on the east side of Austin Lake, from Zylman Ave to Portage's southern city limit, linking toward Schoolcraft Twp. The exact alignment is not published in the data I could reach, so this is an approximate point. Portage CIP budget $3.0M (FY25-26).&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wkzo.com/2025/09/12/833228/"&gt;WKZO – Portage acquires final land for Austin Lake Trail (Sept 12, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://stories.opengov.com/portagemi/published/gqWUrtCEvJ"&gt;City of Portage 2024–2030 CIP – Bikeways &amp;amp; Trailways&lt;/a&gt;</description>
-        <styleUrl>#upd2026-buildpt</styleUrl>
+        <styleUrl>#upd2026-csuppt</styleUrl>
         <Point>
           <coordinates>-85.53600,42.17700,0</coordinates>
         </Point>
@@ -26664,7 +26670,7 @@
       <Placemark>
         <name>KRVT east – Galesburg to Augusta (approx. alignment)</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Not open. County/Parks Foundation say east-end construction resumes in 2026; RCKC CIP lists $1.5M for this trailway in 2026. An agreement with Amtrak on the two rail crossings was reached in 2025.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Kalamazoo River Valley Trail extension, ~4.5 mi&lt;br&gt;Alignment is the KATS planning line (approximate) – final route may differ. Starts at the east end of the existing KRVT (E6) segment.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.parksfoundationkalamazoo.com/parks-projects/"&gt;Parks Foundation of Kalamazoo County – Parks Projects&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.wmuk.org/wmuk-news/2025-05-30/kalamazoo-county-moves-to-close-a-major-gap-in-the-kalamazoo-river-valley-trail"&gt;WMUK – County moves to close KRVT gap (May 30, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Proposed_1_15_24/FeatureServer/0"&gt;KATS Proposed Facilities (ArcGIS layer, Jan 2024)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-build</styleUrl>
+        <styleUrl>#upd2026-csup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.40571,42.29326,0 -85.40582,42.29647,0 -85.39836,42.30087,0 -85.39853,42.30102,0 -85.39401,42.30384,0 -85.38964,42.30655,0 -85.38645,42.30891,0 -85.38307,42.31167,0 -85.37609,42.31734,0 -85.37580,42.31760,0 -85.37307,42.32190,0 -85.37099,42.32542,0 -85.36874,42.32928,0 -85.36757,42.33082,0 -85.36654,42.33154,0 -85.36550,42.33214,0 -85.36234,42.33350,0 -85.35985,42.33449,0 -85.35733,42.33536,0 -85.35642,42.33548,0 -85.35181,42.33540,0 -85.34392,42.33521,0 -85.34173,42.33491,0</coordinates>
@@ -26673,109 +26679,16 @@
       <Placemark>
         <name>KL Ave trailway – Copper Beech Blvd to US-131 (2026, status unconfirmed)</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled for 2026 in the RCKC CIP ($1.47M); Oshtemo said construction depended on a pending permit. I could not confirm whether it is built.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; 10-ft shared-use path&lt;br&gt;Includes a 2026 bridge connection to The Paddock apartments. Side of the road not published – line drawn on the KL Ave centerline.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.oshtemo.org/Departments/Media-Communications/Newsletter/Fall-2025-Newsletter"&gt;Oshtemo Twp – Fall 2025 Newsletter&lt;/a&gt;</description>
-        <styleUrl>#upd2026-build</styleUrl>
+        <styleUrl>#upd2026-csup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.66508,42.28127,0 -85.66487,42.28120,0 -85.66472,42.28112,0 -85.66455,42.28102,0 -85.66273,42.27985,0 -85.66177,42.27924,0 -85.66132,42.27897,0 -85.66111,42.27885,0 -85.66081,42.27870,0 -85.66059,42.27862,0 -85.66042,42.27857,0 -85.66024,42.27852,0 -85.65997,42.27847,0 -85.65903,42.27835,0 -85.65862,42.27830,0 -85.65799,42.27823,0 -85.65644,42.27808,0 -85.65606,42.27805,0 -85.65472,42.27805,0</coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>CAUTION: Kalamazoo Ave reconstruction zone (Jul 2026 – 2028)</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction since July 13, 2026. Westnedge–Harrison through 2027; Stuart neighborhood section 2028.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Work zone – not a bike facility&lt;br&gt;Full rebuild ahead of two-way conversion; one lane usually open, with closures and detours. The city's plan pages for Kalamazoo Ave do not show bike lanes. Other Streets for All downtown work: W Main late 2026/2027, Douglas 2027, Michigan Ave 2028–29 (parts get separated bike lanes), South &amp;amp; Lovell 2030.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/Streets-for-All-Kalamazoo-Ave-2026-2028"&gt;City of Kalamazoo – Streets for All: Kalamazoo Ave (2026–2028)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/SFA-Frequently-Asked-Questions"&gt;City of Kalamazoo – Streets for All FAQ&lt;/a&gt;</description>
-        <styleUrl>#upd2026-build</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.59934,42.29376,0 -85.59928,42.29392,0 -85.59921,42.29400,0 -85.59914,42.29405,0 -85.59905,42.29410,0 -85.59895,42.29414,0 -85.59884,42.29417,0 -85.59873,42.29419,0 -85.59860,42.29421,0 -85.59774,42.29423,0 -85.59598,42.29427,0 -85.59417,42.29430,0 -85.59258,42.29434,0 -85.59203,42.29434,0 -85.59066,42.29438,0 -85.58983,42.29440,0 -85.58860,42.29441,0 -85.58737,42.29443,0 -85.58614,42.29445,0 -85.58484,42.29446,0 -85.58332,42.29450,0 -85.58163,42.29454,0 -85.57995,42.29457,0 -85.57921,42.29458,0 -85.57837,42.29461,0 -85.57658,42.29464,0 -85.57587,42.29468,0 -85.57518,42.29473,0 -85.57507,42.29472,0 -85.57491,42.29466,0</coordinates>
-        </LineString>
-      </Placemark>
-    </Folder>
-    <Folder>
-      <name>Planned 2027-2030: Bikeways &amp; Trails</name>
-      <Placemark>
-        <name>PLANNED 2027 – Cork St bike lanes, Westnedge Ave to Portage St</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned – city rescheduled the project to 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes both sides (4-to-3 lane road diet)&lt;br&gt;Same project re-stripes Lovers Lane between Foley and Portage St to match.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://kalamazoocity.org/Community/Projects/2026/Cork-Street-Road-Diet"&gt;City of Kalamazoo – Cork Street Road Diet&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.58960,42.25966,0 -85.58923,42.25966,0 -85.58851,42.25964,0 -85.58720,42.25963,0 -85.58478,42.25963,0 -85.58365,42.25963,0 -85.57986,42.25964,0 -85.57785,42.25963,0 -85.57771,42.25963,0 -85.57705,42.25963,0 -85.57673,42.25963,0 -85.57632,42.25962,0 -85.57337,42.25958,0 -85.57109,42.25958,0 -85.56944,42.25957,0 -85.56714,42.25957,0 -85.56615,42.25956,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2027 – Lovers Ln, Foley St to Portage St (part of Cork St project)</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned 2027 with the Cork St road diet.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Lane reconfiguration to match Cork St&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://kalamazoocity.org/Community/Projects/2026/Cork-Street-Road-Diet"&gt;City of Kalamazoo – Cork Street Road Diet&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.56775,42.25787,0 -85.56706,42.25878,0 -85.56702,42.25906,0 -85.56714,42.25957,0 -85.56752,42.26042,0 -85.56757,42.26082,0 -85.56740,42.26105,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2027–28 – Howard St road diet, Oakland Dr to Park St</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned. City says work begins summer 2027; the KATS FY2026–2029 TIP project list shows FY2028 for 4-to-3 lanes with new bike lanes.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes (4-to-3 lane road diet) + new crosswalk near Merrill St&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wwmt.com/news/local/howard-street-road-project-four-lanes-three-lanes-transformation-conversion-additional-crosswalk-slow-traffic-safety-maple-street-magnet-school"&gt;WWMT – Kalamazoo to cut Howard Street to three lanes (Mar 19, 2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.60537,42.27424,0 -85.60518,42.27424,0 -85.60481,42.27424,0 -85.60372,42.27423,0 -85.60174,42.27423,0 -85.59945,42.27422,0 -85.59436,42.27421,0 -85.59295,42.27420,0 -85.59250,42.27420,0 -85.59215,42.27420,0 -85.58962,42.27420,0 -85.58870,42.27419,0 -85.58841,42.27416,0 -85.58827,42.27414,0 -85.58811,42.27409,0 -85.58789,42.27400,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2027 – Bronson Blvd protected bike lanes, Whites Rd to Crosstown Pkwy</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2027 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Protected bike lanes&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.59236,42.27008,0 -85.59246,42.26980,0 -85.59262,42.26964,0 -85.59307,42.26932,0 -85.59338,42.26896,0 -85.59350,42.26847,0 -85.59375,42.26642,0 -85.59406,42.26605,0 -85.59452,42.26566,0 -85.59460,42.26548,0 -85.59468,42.26486,0 -85.59499,42.26434,0 -85.59520,42.26411,0 -85.59559,42.26389,0 -85.59617,42.26373,0 -85.59790,42.26374,0 -85.60004,42.26344,0 -85.60076,42.26339,0 -85.60113,42.26325,0 -85.60130,42.26303,0 -85.60132,42.26103,0 -85.60154,42.26044,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2028 – Portage St bike lanes, Lakeway Ave to Cork St</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2028 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes (4-to-3 lane road diet)&lt;br&gt;Would extend the 2026 Portage St lanes south from Cork.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.56087,42.25299,0 -85.56185,42.25418,0 -85.56277,42.25534,0 -85.56361,42.25637,0 -85.56437,42.25729,0 -85.56543,42.25865,0 -85.56615,42.25956,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2028 – N Drake Rd bike lanes, W Main St to Grand Prairie Rd</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2028 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New bike lanes + traffic calming&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.64816,42.29629,0 -85.64810,42.30377,0 -85.64813,42.31070,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2029 – Crosstown Pkwy bike lane extension, Park St to King Hwy</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Extended bike lanes&lt;br&gt;East end drawn at the end of Crosstown Pkwy; confirm the King Hwy limit when plans are published.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.58726,42.27651,0 -85.58632,42.27722,0 -85.58377,42.27943,0 -85.58296,42.28001,0 -85.58185,42.28087,0 -85.58025,42.28123,0 -85.57982,42.28140,0 -85.57942,42.28180,0 -85.57862,42.28305,0 -85.57804,42.28348,0 -85.57013,42.28708,0 -85.56904,42.28730,0 -85.56179,42.28725,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2029 – Lovers Ln, Kilgore Rd to Foley St</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Partial shared-use path; new bike lanes where no path&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.57511,42.24508,0 -85.57512,42.24536,0 -85.57421,42.24904,0 -85.57400,42.24969,0 -85.56775,42.25787,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>PLANNED 2029 – Mount Olivet Rd bike lanes, Riverview Dr to G Ave</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New bike lanes&lt;br&gt;The club map already shows bike lanes on the first ~0.6 mi from Riverview Dr; this project covers the full stretch to G Ave.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>-85.57014,42.30808,0 -85.56081,42.31479,0 -85.55206,42.32118,0 -85.55157,42.32140,0 -85.55121,42.32147,0 -85.54888,42.32153,0 -85.54858,42.32162,0 -85.54829,42.32180,0 -85.54588,42.32505,0 -85.54583,42.32604,0 -85.54581,42.33274,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
         <name>PLANNED 2027 – Portage Rd (Portage), Osterhout to Lakeview: road diet + east-side trail</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2027 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Non-motorized trail on east side; sidewalk on west side (4-to-3 lanes)&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
+        <styleUrl>#upd2026-csup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.56962,42.16468,0 -85.56963,42.16802,0 -85.56673,42.17921,0 -85.56613,42.18010,0 -85.56493,42.18160,0</coordinates>
@@ -26784,7 +26697,7 @@
       <Placemark>
         <name>PLANNED 2028 – Portage Rd (Portage), Lakeview to Zylman: road diet + east-side trail</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2028 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Non-motorized trail on east side; sidewalk on west side (5-to-3 lanes)&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
+        <styleUrl>#upd2026-csup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.56493,42.18160,0 -85.56429,42.18255,0 -85.56378,42.18364,0 -85.56308,42.18545,0 -85.56136,42.19367,0</coordinates>
@@ -26793,7 +26706,7 @@
       <Placemark>
         <name>PLANNED 2029 – Portage Rd (Portage), Zylman to E Centre: road diet + east-side trail</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Non-motorized trail on east side; sidewalk on west side (5-to-3 lanes)&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
-        <styleUrl>#upd2026-plan</styleUrl>
+        <styleUrl>#upd2026-csup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.56136,42.19367,0 -85.56110,42.19490,0 -85.56009,42.19923,0 -85.56004,42.20094,0</coordinates>
@@ -26801,11 +26714,95 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>Planned 2027-2030: County Paved Shoulders</name>
+      <name>Coming: Bike Lanes (planned)</name>
+      <Placemark>
+        <name>PLANNED 2027 – Cork St bike lanes, Westnedge Ave to Portage St</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned – city rescheduled the project to 2027.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes both sides (4-to-3 lane road diet)&lt;br&gt;Same project re-stripes Lovers Lane between Foley and Portage St to match.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://kalamazoocity.org/Community/Projects/2026/Cork-Street-Road-Diet"&gt;City of Kalamazoo – Cork Street Road Diet&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.58960,42.25966,0 -85.58923,42.25966,0 -85.58851,42.25964,0 -85.58720,42.25963,0 -85.58478,42.25963,0 -85.58365,42.25963,0 -85.57986,42.25964,0 -85.57785,42.25963,0 -85.57771,42.25963,0 -85.57705,42.25963,0 -85.57673,42.25963,0 -85.57632,42.25962,0 -85.57337,42.25958,0 -85.57109,42.25958,0 -85.56944,42.25957,0 -85.56714,42.25957,0 -85.56615,42.25956,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2027 – Lovers Ln, Foley St to Portage St (part of Cork St project)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned 2027 with the Cork St road diet.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Lane reconfiguration to match Cork St&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://kalamazoocity.org/Community/Projects/2026/Cork-Street-Road-Diet"&gt;City of Kalamazoo – Cork Street Road Diet&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.56775,42.25787,0 -85.56706,42.25878,0 -85.56702,42.25906,0 -85.56714,42.25957,0 -85.56752,42.26042,0 -85.56757,42.26082,0 -85.56740,42.26105,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2027–28 – Howard St road diet, Oakland Dr to Park St</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Planned. City says work begins summer 2027; the KATS FY2026–2029 TIP project list shows FY2028 for 4-to-3 lanes with new bike lanes.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes (4-to-3 lane road diet) + new crosswalk near Merrill St&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://wwmt.com/news/local/howard-street-road-project-four-lanes-three-lanes-transformation-conversion-additional-crosswalk-slow-traffic-safety-maple-street-magnet-school"&gt;WWMT – Kalamazoo to cut Howard Street to three lanes (Mar 19, 2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.60537,42.27424,0 -85.60518,42.27424,0 -85.60481,42.27424,0 -85.60372,42.27423,0 -85.60174,42.27423,0 -85.59945,42.27422,0 -85.59436,42.27421,0 -85.59295,42.27420,0 -85.59250,42.27420,0 -85.59215,42.27420,0 -85.58962,42.27420,0 -85.58870,42.27419,0 -85.58841,42.27416,0 -85.58827,42.27414,0 -85.58811,42.27409,0 -85.58789,42.27400,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2027 – Bronson Blvd protected bike lanes, Whites Rd to Crosstown Pkwy</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2027 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Protected bike lanes&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.59236,42.27008,0 -85.59246,42.26980,0 -85.59262,42.26964,0 -85.59307,42.26932,0 -85.59338,42.26896,0 -85.59350,42.26847,0 -85.59375,42.26642,0 -85.59406,42.26605,0 -85.59452,42.26566,0 -85.59460,42.26548,0 -85.59468,42.26486,0 -85.59499,42.26434,0 -85.59520,42.26411,0 -85.59559,42.26389,0 -85.59617,42.26373,0 -85.59790,42.26374,0 -85.60004,42.26344,0 -85.60076,42.26339,0 -85.60113,42.26325,0 -85.60130,42.26303,0 -85.60132,42.26103,0 -85.60154,42.26044,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2028 – Portage St bike lanes, Lakeway Ave to Cork St</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2028 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes (4-to-3 lane road diet)&lt;br&gt;Would extend the 2026 Portage St lanes south from Cork.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.56087,42.25299,0 -85.56185,42.25418,0 -85.56277,42.25534,0 -85.56361,42.25637,0 -85.56437,42.25729,0 -85.56543,42.25865,0 -85.56615,42.25956,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2028 – N Drake Rd bike lanes, W Main St to Grand Prairie Rd</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2028 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New bike lanes + traffic calming&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.64816,42.29629,0 -85.64810,42.30377,0 -85.64813,42.31070,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2029 – Crosstown Pkwy bike lane extension, Park St to King Hwy</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Extended bike lanes&lt;br&gt;East end drawn at the end of Crosstown Pkwy; confirm the King Hwy limit when plans are published.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.58726,42.27651,0 -85.58632,42.27722,0 -85.58377,42.27943,0 -85.58296,42.28001,0 -85.58185,42.28087,0 -85.58025,42.28123,0 -85.57982,42.28140,0 -85.57942,42.28180,0 -85.57862,42.28305,0 -85.57804,42.28348,0 -85.57013,42.28708,0 -85.56904,42.28730,0 -85.56179,42.28725,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2029 – Lovers Ln, Kilgore Rd to Foley St</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Partial shared-use path; new bike lanes where no path&lt;br&gt;&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.57511,42.24508,0 -85.57512,42.24536,0 -85.57421,42.24904,0 -85.57400,42.24969,0 -85.56775,42.25787,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>PLANNED 2029 – Mount Olivet Rd bike lanes, Riverview Dr to G Ave</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Listed for FY2029 in the KATS FY2026–2029 TIP project list (Jan 2025); not yet under construction, and timing can change.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; New bike lanes&lt;br&gt;The club map already shows bike lanes on the first ~0.6 mi from Riverview Dr; this project covers the full stretch to G Ave.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://katsmpo.org/blog/fy2026-2029transportationimprovementprogramprojects"&gt;KATS FY2026–2029 TIP project list&lt;/a&gt;</description>
+        <styleUrl>#upd2026-clane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.57014,42.30808,0 -85.56081,42.31479,0 -85.55206,42.32118,0 -85.55157,42.32140,0 -85.55121,42.32147,0 -85.54888,42.32153,0 -85.54858,42.32162,0 -85.54829,42.32180,0 -85.54588,42.32505,0 -85.54583,42.32604,0 -85.54581,42.33274,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Coming: Paved Shoulders (planned, RCKC)</name>
       <Placemark>
         <name>PLANNED 2027 – ML Ave, 26th St to 28th St (Comstock Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2027 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.51184,42.26666,0 -85.49234,42.26665,0</coordinates>
@@ -26814,7 +26811,7 @@
       <Placemark>
         <name>PLANNED 2027 – N Ave, 9th St to 11th St (Oshtemo Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2027 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.67761,42.24526,0 -85.65807,42.24527,0</coordinates>
@@ -26823,7 +26820,7 @@
       <Placemark>
         <name>PLANNED 2027 – TU Ave, 23rd St to Sprinkle Rd (Schoolcraft/Brady) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2027 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.54012,42.15073,0 -85.52458,42.15087,0</coordinates>
@@ -26832,7 +26829,7 @@
       <Placemark>
         <name>PLANNED 2028 – W Ave, VanKal St to 4th St (Prairie Ronde Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2028 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.76368,42.11284,0 -85.72468,42.11328,0</coordinates>
@@ -26841,7 +26838,7 @@
       <Placemark>
         <name>PLANNED 2028 – Portage Rd, XY Ave to W Ave (Schoolcraft Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2028 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.57843,42.09208,0 -85.57435,42.09726,0 -85.56914,42.10308,0 -85.56886,42.10373,0 -85.56902,42.11415,0</coordinates>
@@ -26850,7 +26847,7 @@
       <Placemark>
         <name>PLANNED 2029 – ML Ave, 28th St to 31st St (Comstock Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2029 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.49234,42.26665,0 -85.46296,42.26681,0</coordinates>
@@ -26859,7 +26856,7 @@
       <Placemark>
         <name>PLANNED 2029 – 6th St, D Ave to Ravine Rd (Alamo Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2029 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads. North end placed where 6th St ends at Ravine Rd.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.70778,42.37509,0 -85.70847,42.38958,0 -85.70874,42.40388,0 -85.70854,42.40451,0 -85.70371,42.41356,0 -85.70323,42.41414,0 -85.70243,42.41441,0</coordinates>
@@ -26868,7 +26865,7 @@
       <Placemark>
         <name>PLANNED 2029 – P Ave, 1.5 mi west of 3rd St to 3rd St (Texas Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2029 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads. West end placed 7,920 ft west of 3rd St per the CIP.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.76482,42.21553,0 -85.76468,42.21552,0 -85.76413,42.21550,0 -85.75629,42.21553,0 -85.75523,42.21554,0 -85.74366,42.21555,0 -85.73652,42.21552,0 -85.73556,42.21556,0</coordinates>
@@ -26877,7 +26874,7 @@
       <Placemark>
         <name>PLANNED 2029 – P Ave / 3rd St / OP Ave, 3rd St to 6th St (Texas Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2029 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads. Route interpreted as P Ave jog – 3rd St – OP Ave.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.73556,42.21556,0 -85.73531,42.21556,0 -85.73364,42.21553,0 -85.73314,42.21558,0 -85.73285,42.21566,0 -85.73208,42.21593,0 -85.73137,42.21619,0 -85.73087,42.21657,0 -85.73083,42.21664,0 -85.73079,42.21672,0 -85.73077,42.21684,0 -85.73076,42.21703,0 -85.73077,42.22232,0 -85.73074,42.22243,0 -85.73070,42.22251,0 -85.73063,42.22259,0 -85.73053,42.22266,0 -85.73046,42.22271,0 -85.73022,42.22278,0 -85.72993,42.22279,0 -85.72574,42.22279,0 -85.72489,42.22280,0 -85.71743,42.22282,0 -85.71168,42.22282,0 -85.70616,42.22283,0</coordinates>
@@ -26886,7 +26883,7 @@
       <Placemark>
         <name>PLANNED 2029 – 4th St, OP Ave to 1 mi north of O Ave (Texas Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2029 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads. North end placed 5,280 ft north of O Ave per the CIP.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.72574,42.22279,0 -85.72572,42.23007,0 -85.72598,42.24456,0</coordinates>
@@ -26895,7 +26892,7 @@
       <Placemark>
         <name>PLANNED 2030 – 2nd St, W Main St to G Ave (Oshtemo Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2030 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.74537,42.29526,0 -85.74523,42.33159,0</coordinates>
@@ -26904,10 +26901,22 @@
       <Placemark>
         <name>PLANNED 2030 – 27th St, D Ave to M-89 (Richland Twp) shoulder widening</name>
         <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Scheduled 2030 in the RCKC Primary Road CIP 2026–2030.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Widened shoulders (county road)&lt;br&gt;Endpoints placed at the named cross roads.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocountyroads.com/userfiles/kcrc/file/Projects/2026-2030%20CIP%20Approved%2012-16-2025.pdf"&gt;RCKC Primary Road CIP 2026–2030 (approved Dec 16, 2025)&lt;/a&gt;</description>
-        <styleUrl>#upd2026-shld</styleUrl>
+        <styleUrl>#upd2026-cshld</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.50370,42.37636,0 -85.50392,42.37668,0 -85.50440,42.40260,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Construction Zone: Kalamazoo Ave (2026-2028)</name>
+      <Placemark>
+        <name>CAUTION: Kalamazoo Ave reconstruction zone (Jul 2026 – 2028)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction since July 13, 2026. Westnedge–Harrison through 2027; Stuart neighborhood section 2028.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Work zone – not a bike facility&lt;br&gt;Full rebuild ahead of two-way conversion; one lane usually open, with closures and detours. The city's plan pages for Kalamazoo Ave do not show bike lanes. Other Streets for All downtown work: W Main late 2026/2027, Douglas 2027, Michigan Ave 2028–29 (parts get separated bike lanes), South &amp;amp; Lovell 2030.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/Streets-for-All-Kalamazoo-Ave-2026-2028"&gt;City of Kalamazoo – Streets for All: Kalamazoo Ave (2026–2028)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/SFA-Frequently-Asked-Questions"&gt;City of Kalamazoo – Streets for All FAQ&lt;/a&gt;</description>
+        <styleUrl>#upd2026-zone</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.59934,42.29376,0 -85.59928,42.29392,0 -85.59921,42.29400,0 -85.59914,42.29405,0 -85.59905,42.29410,0 -85.59895,42.29414,0 -85.59884,42.29417,0 -85.59873,42.29419,0 -85.59860,42.29421,0 -85.59774,42.29423,0 -85.59598,42.29427,0 -85.59417,42.29430,0 -85.59258,42.29434,0 -85.59203,42.29434,0 -85.59066,42.29438,0 -85.58983,42.29440,0 -85.58860,42.29441,0 -85.58737,42.29443,0 -85.58614,42.29445,0 -85.58484,42.29446,0 -85.58332,42.29450,0 -85.58163,42.29454,0 -85.57995,42.29457,0 -85.57921,42.29458,0 -85.57837,42.29461,0 -85.57658,42.29464,0 -85.57587,42.29468,0 -85.57518,42.29473,0 -85.57507,42.29472,0 -85.57491,42.29466,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>

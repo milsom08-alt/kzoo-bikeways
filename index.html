@@ -83,7 +83,7 @@
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  var COMING = /^(Under Construction|Planned)/;
+  var COMING = /^(Coming|Construction Zone)/;
   var groups = [];          // {name,color,dashed,existing,all:L.LayerGroup,newOnly:L.LayerGroup,cb}
   var onlyNew = false;
 
@@ -101,7 +101,7 @@
     var bounds = L.latLngBounds();
     data.layers.forEach(function(Ly){
       var coming = COMING.test(Ly.name);
-      var dashed = coming && !/^Planned 2027-2030: County/.test(Ly.name) ? '8 7' : (coming ? '2 6' : null);
+      var dashed = coming ? '9 7' : null;
       var all = L.layerGroup(), nw = L.layerGroup();
       Ly.features.forEach(function(f){
         var shape;
@@ -127,8 +127,8 @@
 
       var row = el('label',{'class':'row'});
       var cb = el('input',{type:'checkbox'}); cb.checked = true; g.cb = cb;
-      var sw = el('span',{'class':'sw'+(dashed?' dash':'')}); sw.style.background = Ly.color; sw.style.color = Ly.color;
-      row.appendChild(cb); row.appendChild(sw); row.appendChild(el('span',{'class':'n'}, Ly.name.replace('Planned 2027-2030: ','Planned: ')));
+      var sw = el('span',{'class':'sw'+(dashed?' dash':'')}); sw.style.color = Ly.color; if (!dashed) sw.style.background = Ly.color;
+      row.appendChild(cb); row.appendChild(sw); row.appendChild(el('span',{'class':'n'}, Ly.name.replace(/^Coming: /,'')));
       row.appendChild(el('span',{'class':'c'}, String(Ly.features.length)));
       cb.addEventListener('change', render);
       document.getElementById(coming?'coming':'existing').appendChild(row);
