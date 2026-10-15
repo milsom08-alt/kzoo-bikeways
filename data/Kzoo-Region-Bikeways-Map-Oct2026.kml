@@ -4946,7 +4946,7 @@
       </Placemark>
       <Placemark>
         <name>Fruit Belt Rail Trail SUP (new 2026, crushed limestone)</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Complete and open (Oshtemo Twp). Construction ran through 2026.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Shared-use trail, ~2 mi, 10-ft crushed limestone (not paved)&lt;br&gt;Former Fruit Belt rail corridor. Trailheads with paved parking at Flesher Field and 6th Street. Line geometry from the KATS October 2026 facilities layer.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.oshtemo.org/Departments/Parks-Recreation-Department/Fruit-Belt-Rail-Trail-Development"&gt;Oshtemo Twp – Fruit Belt Rail Trail Development&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.oshtemo.org/Departments/Media-Communications/Newsletter/Spring-2026-Newsletter"&gt;Oshtemo Twp – Spring 2026 Newsletter&lt;/a&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Open – ribbon cutting July 19, 2026 (Oshtemo Twp). Not cleared of snow in winter.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Shared-use trail, ~2 mi, 10-ft crushed limestone (not paved)&lt;br&gt;Former Fruit Belt rail corridor. Trailheads with paved parking at Flesher Field and 6th Street. Line geometry from the KATS October 2026 facilities layer.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.oshtemo.org/Departments/Parks-Recreation-Department/Fruit-Belt-Rail-Trail-Development"&gt;Oshtemo Twp – Fruit Belt Rail Trail Development&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.oshtemo.org/Departments/Media-Communications/Newsletter/Summer-2026-Newsletter"&gt;Oshtemo Twp – Summer 2026 Newsletter&lt;/a&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
         <styleUrl>#upd2026-sup</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -4968,6 +4968,24 @@
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-85.53113,42.15742,0 -85.52875,42.15079,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>East Central Trail SUP (new 2025)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Open – ribbon cutting May 16, 2025.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Paved shared-use path with boardwalk, ~1 mi&lt;br&gt;Runs between Portage Rd and Lovers Ln, linking the Lake Center District with Celery Flats. Line from the KATS October 2026 facilities layer.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.portagemi.gov/CivicAlerts.aspx?AID=1546&amp;ARC=2254"&gt;City of Portage – East Central Trail Ribbon Cutting (May 2025)&lt;/a&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-sup</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.56010,42.20354,0 -85.56087,42.20357,0 -85.56091,42.20424,0 -85.56902,42.20436,0 -85.57435,42.20743,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Gull Rd SUP – east segment (added Oct 2026)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Existing – listed as a shared-use path in KATS's facilities layer; not new, but it was missing from the club map.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Shared-use path along Gull Rd (M-43)&lt;br&gt;Fills the gap between the club map's Gull Rd paths. Drawn on the Gull Rd centerline; which side of the road the path is on isn't recorded.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-sup</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.53600,42.31672,0 -85.53357,42.31783,0 -85.52961,42.31978,0 -85.52220,42.32326,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
@@ -6354,8 +6372,17 @@
         </LineString>
       </Placemark>
       <Placemark>
+        <name>E Kilgore Rd Bike Lane – Sprinkle Rd to Portage Rd (added Oct 2026)</name>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Existing – listed as a bike lane in KATS's facilities layer since at least 2024; it was missing from the club map.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes&lt;br&gt;Worth a quick look on your next ride to confirm the lanes are still marked. Line from the KATS October 2026 facilities layer.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
+        <styleUrl>#upd2026-lane</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-85.53092,42.24496,0 -85.53823,42.24498,0 -85.54333,42.24499,0 -85.55054,42.24503,0 -85.55239,42.24502,0 -85.55477,42.24502,0 -85.55789,42.24502,0 -85.55826,42.24495,0 -85.55860,42.24477,0 -85.55924,42.24437,0 -85.55947,42.24419,0 -85.55961,42.24395,0 -85.55965,42.24385,0 -85.55968,42.24375,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
         <name>Portage St (Cork-Stockbridge) Bike Lane (new 2026)</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Built Aug 3 – Sept 30, 2026; final pavement markings were scheduled for the week of Sept 28. The city page had not yet posted a completion notice – confirm striping on the ground.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes both sides (4-to-3 lane road diet with center turn lane)&lt;br&gt;Also adds median refuge islands and rapid flashing beacons at Cambridge, Roseland, Franklin, Lay Blvd, Hays Park, Clinton and Egleston. Connects to the existing Portage St bike lanes north of Stockbridge.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/2026/Portage-Street-Lane-Conversion"&gt;City of Kalamazoo – Portage Street Lane Conversion (2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://wwmt.com/news/local/kalamazoo-commissioners-approve-portage-street-road-diet-project-6-1-vote-turn-lane-safety-bike-pedestrian-children-school-speeding-local-west-michigan-wwmt"&gt;WWMT – Commissioners approve Portage Street road diet (May 11, 2026)&lt;/a&gt;</description>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Built Aug 3 – Sept 30, 2026 (final markings week of Sept 28). Now listed as an existing bike lane in KATS's facilities layer (updated Oct 7, 2026).&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Bike lanes both sides (4-to-3 lane road diet with center turn lane)&lt;br&gt;Also adds median refuge islands and rapid flashing beacons at Cambridge, Roseland, Franklin, Lay Blvd, Hays Park, Clinton and Egleston. Connects to the existing Portage St bike lanes north of Stockbridge.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/2026/Portage-Street-Lane-Conversion"&gt;City of Kalamazoo – Portage Street Lane Conversion (2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://wwmt.com/news/local/kalamazoo-commissioners-approve-portage-street-road-diet-project-6-1-vote-turn-lane-safety-bike-pedestrian-children-school-speeding-local-west-michigan-wwmt"&gt;WWMT – Commissioners approve Portage Street road diet (May 11, 2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"&gt;KATS Existing Facilities October 2026 (ArcGIS layer, edited Oct 7, 2026)&lt;/a&gt;</description>
         <styleUrl>#upd2026-lane</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
@@ -26931,7 +26958,7 @@
       <name>Construction Zone: Kalamazoo Ave (2026-2028)</name>
       <Placemark>
         <name>CAUTION: Kalamazoo Ave reconstruction zone (Jul 2026 – 2028)</name>
-        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction since July 13, 2026. Westnedge–Harrison through 2027; Stuart neighborhood section 2028.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Work zone – not a bike facility&lt;br&gt;Full rebuild ahead of two-way conversion; one lane usually open, with closures and detours. The city's plan pages for Kalamazoo Ave do not show bike lanes. Other Streets for All downtown work: W Main late 2026/2027, Douglas 2027, Michigan Ave 2028–29 (parts get separated bike lanes), South &amp;amp; Lovell 2030.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/Streets-for-All-Kalamazoo-Ave-2026-2028"&gt;City of Kalamazoo – Streets for All: Kalamazoo Ave (2026–2028)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/SFA-Frequently-Asked-Questions"&gt;City of Kalamazoo – Streets for All FAQ&lt;/a&gt;</description>
+        <description>&lt;b&gt;Status (as of Oct 14, 2026):&lt;/b&gt; Under construction since July 13, 2026. Westnedge–Harrison through 2027; Stuart neighborhood section 2028.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; Work zone – not a bike facility&lt;br&gt;Full rebuild ahead of two-way conversion; one lane usually open, with closures and detours. The city's plan pages for Kalamazoo Ave do not show bike lanes. The KRVT's downtown section has been detoured onto the Michigan Ave two-way cycle track (posted May 2024 – summer 2026; check signs). Other Streets for All downtown work: W Main late 2026/2027, Douglas 2027, Michigan Ave 2028–29 (parts get separated bike lanes), South &amp;amp; Lovell 2030.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/Streets-for-All-Kalamazoo-Ave-2026-2028"&gt;City of Kalamazoo – Streets for All: Kalamazoo Ave (2026–2028)&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.kalamazoocity.org/Community/Projects/Streets-for-All/SFA-Frequently-Asked-Questions"&gt;City of Kalamazoo – Streets for All FAQ&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.kzooparks.org/Parks-Facilities/Kalamazoo-River-Valley-Trail"&gt;Kzoo Parks – Kalamazoo River Valley Trail&lt;/a&gt;</description>
         <styleUrl>#upd2026-zone</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
