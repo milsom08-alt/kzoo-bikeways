@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K'zoo Region Bikeways Map</title>
+<meta name="description" content="Bikeways in the Kalamazoo, Michigan region – shared-use paths, bike lanes, routes and shoulders, updated October 2026 with new, under-construction and planned projects.">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1d2327; --muted:#5f6b72; --line:#e3e7ea; --panel:#ffffffee; --accent:#0f6e8c;
+    --shadow:0 6px 24px rgba(0,0,0,.18);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15191c; --fg:#e8ecee; --muted:#9aa6ad; --line:#2b3236; --panel:#1b2024f2; --accent:#5cc3e0; }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);
+    font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  #map{position:fixed;inset:0}
+  header{position:fixed;top:max(10px,env(safe-area-inset-top));left:10px;right:10px;z-index:1000;
+    display:flex;gap:8px;align-items:center;pointer-events:none}
+  .title{pointer-events:auto;background:var(--panel);backdrop-filter:blur(6px);border-radius:12px;
+    box-shadow:var(--shadow);padding:8px 12px;min-width:0}
+  .title h1{font-size:16px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .title p{margin:0;font-size:12px;color:var(--muted)}
+  .spacer{flex:1}
+  button.chip{pointer-events:auto;border:0;background:var(--panel);color:var(--fg);border-radius:12px;
+    box-shadow:var(--shadow);padding:10px 12px;font:600 14px system-ui,sans-serif;cursor:pointer}
+  button.chip:active{transform:scale(.97)}
+  #panel{position:fixed;z-index:1001;right:10px;top:72px;width:320px;max-height:calc(100% - 92px);overflow:auto;
+    background:var(--panel);backdrop-filter:blur(8px);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px}
+  #panel[hidden]{display:none}
+  @media (max-width:640px){
+    #panel{left:0;right:0;top:auto;bottom:0;width:auto;max-height:62%;border-radius:16px 16px 0 0;
+      padding-bottom:max(14px,env(safe-area-inset-bottom))}
+  }
+  #panel h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:10px 0 6px}
+  #panel h2:first-child{margin-top:0}
+  .row{display:flex;align-items:center;gap:10px;padding:7px 2px;border-bottom:1px solid var(--line);cursor:pointer}
+  .row:last-child{border-bottom:0}
+  .row input{width:18px;height:18px;accent-color:var(--accent);margin:0}
+  .sw{width:26px;height:5px;border-radius:3px;flex:none}
+  .sw.dash{background-image:repeating-linear-gradient(90deg,currentColor 0 6px,transparent 6px 10px);background-color:transparent!important}
+  .row span.n{flex:1}
+  .row span.c{color:var(--muted);font-size:12px}
+  .toggle{display:flex;align-items:center;gap:10px;padding:8px 2px;font-weight:600}
+  .note{font-size:13px;color:var(--muted)}
+  .note a,.leaflet-popup-content a{color:var(--accent)}
+  .dl a{display:block;padding:6px 0}
+  .leaflet-popup-content{font-size:13px;line-height:1.45;max-width:280px}
+  .leaflet-popup-content h3{font-size:14px;margin:0 0 4px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;color:#fff;margin-bottom:6px}
+  .leaflet-control-attribution{font-size:10px}
+</style>
+</head>
+<body>
+<div id="map" role="application" aria-label="Map of Kalamazoo region bikeways"></div>
+<header>
+  <div class="title"><h1>K'zoo Region Bikeways</h1><p>Updated October 2026 · tap a line for details</p></div>
+  <div class="spacer"></div>
+  <button class="chip" id="locate" aria-label="Show my location">◎ Me</button>
+  <button class="chip" id="toggle" aria-expanded="false" aria-controls="panel">Layers</button>
+</header>
+<aside id="panel" hidden>
+  <label class="toggle"><input type="checkbox" id="onlynew"> Show only changes since Dec 2024</label>
+  <h2>Existing</h2><div id="existing"></div>
+  <h2>Coming</h2><div id="coming"></div>
+  <h2>About</h2>
+  <p class="note">Based on the Kalamazoo Bicycle Club's K'zoo Region Bikeways Map (Dec 2024), made with RCKC and KATS. The October 2026 update adds facilities opened since then and projects under construction or planned through 2030, each with its status and sources. Planned dates can slip. Ride at your own risk.</p>
+  <div class="dl note">
+    <a href="data/Kzoo-Region-Bikeways-Map-Oct2026.kml" download>Download KML (Google Earth)</a>
+    <a href="data/Kzoo-Map-Oct2026-Layers.zip" download>Download layers for Google My Maps (zip)</a>
+  </div>
+</aside>
+<script src="vendor/leaflet/leaflet.js"></script>
+<script>
+(function(){
+  var map = L.map('map',{zoomControl:false, preferCanvas:true}).setView([42.275,-85.595],12);
+  L.control.zoom({position:'bottomleft'}).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
+    maxZoom:19, subdomains:'abcd',
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  }).addTo(map);
+
+  var COMING = /^(Under Construction|Planned)/;
+  var groups = [];          // {name,color,dashed,existing,all:L.LayerGroup,newOnly:L.LayerGroup,cb}
+  var onlyNew = false;
+
+  function el(tag, attrs, text){ var e=document.createElement(tag); for(var k in attrs) e.setAttribute(k,attrs[k]); if(text!=null) e.textContent=text; return e; }
+
+  function popup(f, layerName, color){
+    var box = el('div');
+    var t = el('span',{'class':'tag'}, layerName); t.style.background = color; box.appendChild(t);
+    box.appendChild(el('h3',{}, f.n || layerName));
+    if (f.d){ var d = el('div'); d.innerHTML = f.d; box.appendChild(d); }   // descriptions written for this update only
+    return box;
+  }
+
+  fetch('data/bikeways.json').then(function(r){ return r.json(); }).then(function(data){
+    var bounds = L.latLngBounds();
+    data.layers.forEach(function(Ly){
+      var coming = COMING.test(Ly.name);
+      var dashed = coming && !/^Planned 2027-2030: County/.test(Ly.name) ? '8 7' : (coming ? '2 6' : null);
+      var all = L.layerGroup(), nw = L.layerGroup();
+      Ly.features.forEach(function(f){
+        var shape;
+        if (typeof f.g[0] === 'number'){
+          shape = L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1});
+        } else {
+          var ll = f.g.map(function(p){ return [p[1],p[0]]; });
+          shape = L.polyline(ll,{color:f.c, weight: Math.max(3, Math.min(6, f.w)) + (f.new?1.5:0), opacity:.92,
+                                 dashArray: dashed, lineCap:'round'});
+          ll.forEach(function(p){ bounds.extend(p); });
+        }
+        shape.bindPopup(function(){ return popup(f, Ly.name, f.c); });
+        shape.addTo(all);
+        if (f.new || coming){
+          var s2 = typeof f.g[0] === 'number'
+            ? L.circleMarker([f.g[1],f.g[0]],{radius:8,color:'#fff',weight:2,fillColor:f.c,fillOpacity:1})
+            : L.polyline(f.g.map(function(p){return [p[1],p[0]];}),{color:f.c,weight:6,opacity:.95,dashArray:dashed,lineCap:'round'});
+          s2.bindPopup(function(){ return popup(f, Ly.name, f.c); }); s2.addTo(nw);
+        }
+      });
+      var g = {name:Ly.name, color:Ly.color, dashed:!!dashed, all:all, nw:nw, count:Ly.features.length};
+      groups.push(g);
+
+      var row = el('label',{'class':'row'});
+      var cb = el('input',{type:'checkbox'}); cb.checked = true; g.cb = cb;
+      var sw = el('span',{'class':'sw'+(dashed?' dash':'')}); sw.style.background = Ly.color; sw.style.color = Ly.color;
+      row.appendChild(cb); row.appendChild(sw); row.appendChild(el('span',{'class':'n'}, Ly.name.replace('Planned 2027-2030: ','Planned: ')));
+      row.appendChild(el('span',{'class':'c'}, String(Ly.features.length)));
+      cb.addEventListener('change', render);
+      document.getElementById(coming?'coming':'existing').appendChild(row);
+    });
+    render();
+    if (window.innerWidth > 640 && bounds.isValid()) map.fitBounds(bounds,{padding:[20,20]});
+  }).catch(function(){
+    alert('Could not load the map data. Please reload the page.');
+  });
+
+  function render(){
+    groups.forEach(function(g){
+      map.removeLayer(g.all); map.removeLayer(g.nw);
+      if (!g.cb.checked) return;
+      (onlyNew ? g.nw : g.all).addTo(map);
+    });
+  }
+  document.getElementById('onlynew').addEventListener('change', function(e){ onlyNew = e.target.checked; render(); });
+
+  var panel = document.getElementById('panel'), tg = document.getElementById('toggle');
+  function setPanel(open){ panel.hidden = !open; tg.setAttribute('aria-expanded', String(open)); }
+  setPanel(window.innerWidth > 640);
+  tg.addEventListener('click', function(){ setPanel(panel.hidden); });
+  map.on('click', function(){ if (window.innerWidth <= 640) setPanel(false); });
+
+  var me = null;
+  document.getElementById('locate').addEventListener('click', function(){
+    if (!navigator.geolocation){ alert('Location is not available on this device.'); return; }
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var ll = [pos.coords.latitude, pos.coords.longitude];
+      if (me) map.removeLayer(me);
+      me = L.layerGroup([
+        L.circle(ll,{radius:pos.coords.accuracy,color:'#1a73e8',weight:1,fillOpacity:.12}),
+        L.circleMarker(ll,{radius:7,color:'#fff',weight:2,fillColor:'#1a73e8',fillOpacity:1})
+      ]).addTo(map);
+      map.setView(ll, Math.max(map.getZoom(), 15));
+    }, function(){ alert('Could not get your location. Check that location access is allowed for this site.'); },
+    {enableHighAccuracy:true, timeout:10000});
+  });
+})();
+</script>
+</body>
+</html>
