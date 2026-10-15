@@ -76,7 +76,9 @@
 <script src="vendor/leaflet/leaflet.js"></script>
 <script>
 (function(){
-  var map = L.map('map',{zoomControl:false, preferCanvas:true}).setView([42.275,-85.595],12);
+  // Wider tap/click area around lines: extra pixels on each side (more on touch screens)
+  var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  var map = L.map('map',{zoomControl:false, renderer: L.canvas({tolerance: coarse ? 14 : 8, padding: 0.5})}).setView([42.275,-85.595],12);
   L.control.zoom({position:'bottomleft'}).addTo(map);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
     maxZoom:19,
