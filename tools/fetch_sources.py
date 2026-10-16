@@ -107,6 +107,17 @@ BLUESTAR_ROADS = """[out:json][timeout:300];
 way["highway"]["name"~"Blue Star|North St|66th|Holland St|Wiley|Baseline|Old Allegan|Lake St|Center St|Washington|Water St|Butler|Culver|Phillips|Ferry|Main St|M-89|124th|122nd|126th"](42.38,-86.30,42.70,-86.15);
 out tags geom;"""
 
+# Berrien County lakeshore (Lakeshore Trail, Red Arrow Trail)
+BERRIEN_QUERY = """[out:json][timeout:300];
+(
+  way["highway"="cycleway"](41.75,-86.82,42.22,-86.30);
+  way["highway"~"^(path|footway|track)$"]["bicycle"~"^(designated|yes)$"](41.75,-86.82,42.22,-86.30);
+  way["highway"~"^(path|footway|cycleway)$"]["name"](41.75,-86.82,42.22,-86.30);
+);
+out tags geom;
+relation["route"~"^(bicycle|hiking|foot)$"](41.75,-86.82,42.22,-86.30);
+out body geom;"""
+
 def fetch_osm_query(query, fname):
     data = urllib.parse.urlencode({"data": query}).encode()
     for i, url in enumerate(OVERPASS * 2):
@@ -160,6 +171,11 @@ try:
     print("osm_bluestar_roads:", n, "elements")
 except Exception as e:
     summary.append({"file": "osm_bluestar_roads", "error": str(e)}); print("ERROR osm bluestar", e, file=sys.stderr)
+try:
+    n = fetch_osm_query(BERRIEN_QUERY, "osm_berrien.json"); summary.append({"file": "osm_berrien", "elements": n, "license": "ODbL, (c) OpenStreetMap contributors"})
+    print("osm_berrien:", n, "elements")
+except Exception as e:
+    summary.append({"file": "osm_berrien", "error": str(e)}); print("ERROR osm berrien", e, file=sys.stderr)
 for name, base, layers, bbox in SOURCES:
     try:
         svc = get(base, {"f": "json"})
