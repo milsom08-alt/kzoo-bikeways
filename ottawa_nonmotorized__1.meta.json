@@ -1,0 +1,1180 @@
+{
+ "currentVersion": 11.5,
+ "cimVersion": "3.5.0",
+ "id": 1,
+ "name": "Future Paved Shoulders & On-Street Bike Lanes",
+ "type": "Feature Layer",
+ "parentLayer": null,
+ "defaultVisibility": false,
+ "minScale": 0,
+ "maxScale": 0,
+ "canScaleSymbols": false,
+ "geometryType": "esriGeometryPolyline",
+ "description": "",
+ "copyrightText": "",
+ "editFieldsInfo": {
+  "creationDateField": "created_date",
+  "creatorField": "created_user",
+  "editDateField": "last_edited_date",
+  "editorField": "last_edited_user"
+ },
+ "ownershipBasedAccessControlForFeatures": null,
+ "syncCanReturnChanges": true,
+ "relationships": [],
+ "isDataVersioned": true,
+ "isDataArchived": false,
+ "infoInEstimates": [
+  "extent"
+ ],
+ "isDataBranchVersioned": false,
+ "isDataReplicaTracked": false,
+ "isCoGoEnabled": false,
+ "supportsRollbackOnFailureParameter": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportsValidateSQL": true,
+ "supportsCoordinatesQuantization": true,
+ "supportsQuantizationEditMode": true,
+ "supportsCalculate": true,
+ "supportsASyncCalculate": true,
+ "supportsDurableUrlForSyncModelNone": false,
+ "supportsDatumTransformation": true,
+ "advancedQueryCapabilities": {
+  "supportsPagination": true,
+  "supportsQueryWithDistance": true,
+  "supportsReturningQueryExtent": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsCurrentUserQueries": true,
+  "supportsFullTextSearch": true,
+  "fullTextSearchCapabilities": {
+   "supportsSearchOperator": true,
+   "supportsOperator": false,
+   "supportsSqlExpressionInFullText": true
+  },
+  "fullTextSearchableFields": [],
+  "supportsQueryWithResultType": true,
+  "supportsReturningGeometryCentroid": false,
+  "supportsReturningGeometryEnvelope": true,
+  "supportsSqlExpression": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsQueryAnalytic": true,
+  "supportsTrueCurve": true,
+  "supportedCurveTypes": [
+   "esriGeometryCircularArc",
+   "esriGeometryEllipticArc",
+   "esriGeometryBezier3Curve"
+  ],
+  "supportsQueryWithCacheHint": false
+ },
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": true,
+  "supportsPercentileAnalytic": true
+ },
+ "advancedEditingCapabilities": {
+  "supportedSqlFormatsInCalculate": [
+   "standard"
+  ],
+  "supportsAsyncApplyEdits": true,
+  "supportsApplyEditsbyUploadID": true,
+  "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+ },
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeLengthFieldName": "Shape__Length",
+  "units": "esriMeters"
+ },
+ "hasMetadata": true,
+ "extent": {
+  "xmin": -9622236.568450987,
+  "ymin": 5201132.278437624,
+  "xmax": -9392917.643547136,
+  "ymax": 5504142.73738399,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -20037700,
+   "falseY": -30241100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "spatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -20037700,
+  "falseY": -30241100,
+  "xyUnits": 10000,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "sourceSpatialReference": {
+  "wkid": 2253,
+  "latestWkid": 2253,
+  "xyTolerance": 0.0032808398950131233,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -107138600,
+  "falseY": -97193800,
+  "xyUnits": 3048,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "RouteType",
+   "uniqueValueGroups": [
+    {
+     "heading": "Route Type",
+     "classes": [
+      {
+       "label": "On-Street Bike Lane",
+       "description": "On-Street Bike Lane",
+       "symbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+         115,
+         178,
+         255,
+         255
+        ],
+        "width": 2.6
+       },
+       "values": [
+        [
+         "On-Street Bike Lane"
+        ]
+       ]
+      },
+      {
+       "label": "Paved Shoulder",
+       "description": "Paved Shoulder",
+       "symbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+         255,
+         235,
+         175,
+         255
+        ],
+        "width": 2.6
+       },
+       "values": [
+        [
+         "Paved Shoulder"
+        ]
+       ]
+      },
+      {
+       "label": "Sharrow",
+       "description": "Sharrow",
+       "symbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+         255,
+         167,
+         127,
+         255
+        ],
+        "width": 2.6
+       },
+       "values": [
+        [
+         "Sharrow"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "width": 2.6
+     },
+     "value": "On-Street Bike Lane",
+     "label": "On-Street Bike Lane"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       235,
+       175,
+       255
+      ],
+      "width": 2.6
+     },
+     "value": "Paved Shoulder",
+     "label": "Paved Shoulder"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       167,
+       127,
+       255
+      ],
+      "width": 2.6
+     },
+     "value": "Sharrow",
+     "label": "Sharrow"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        87,
+        69,
+        191,
+        255
+       ],
+       "toColor": [
+        87,
+        69,
+        191,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        57,
+        189,
+        114,
+        255
+       ],
+       "toColor": [
+        57,
+        189,
+        114,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        191,
+        53,
+        40,
+        255
+       ],
+       "toColor": [
+        191,
+        53,
+        40,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        48,
+        156,
+        201,
+        255
+       ],
+       "toColor": [
+        48,
+        156,
+        201,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        153,
+        41,
+        255
+       ],
+       "toColor": [
+        179,
+        153,
+        41,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        171,
+        56,
+        119,
+        255
+       ],
+       "toColor": [
+        171,
+        56,
+        119,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        132,
+        194,
+        45,
+        255
+       ],
+       "toColor": [
+        132,
+        194,
+        45,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        194,
+        66,
+        194,
+        255
+       ],
+       "toColor": [
+        194,
+        66,
+        194,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        64,
+        184,
+        172,
+        255
+       ],
+       "toColor": [
+        64,
+        184,
+        172,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        168,
+        103,
+        62,
+        255
+       ],
+       "toColor": [
+        168,
+        103,
+        62,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        47,
+        84,
+        153,
+        255
+       ],
+       "toColor": [
+        47,
+        84,
+        153,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        46,
+        79,
+        255
+       ],
+       "toColor": [
+        199,
+        46,
+        79,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        34,
+        153,
+        32,
+        255
+       ],
+       "toColor": [
+        34,
+        153,
+        32,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "hasM": false,
+ "hasZ": false,
+ "allowGeometryUpdates": true,
+ "allowTrueCurvesUpdates": true,
+ "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+ "hasAttachments": false,
+ "supportsApplyEditsWithGlobalIds": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "objectIdField": "OBJECTID",
+ "globalIdField": "GlobalID",
+ "displayField": "TrailName",
+ "typeIdField": "RouteType",
+ "subtypeField": "",
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null,
+   "editable": false,
+   "nullable": false,
+   "defaultValue": null,
+   "modelName": "OBJECTID"
+  },
+  {
+   "name": "NonMotorizedID",
+   "type": "esriFieldTypeString",
+   "alias": "Feature Unique ID",
+   "domain": null,
+   "editable": true,
+   "nullable": false,
+   "length": 36,
+   "defaultValue": null,
+   "modelName": "ROUTE_ID"
+  },
+  {
+   "name": "TrailName",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Name",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 150,
+   "defaultValue": null,
+   "modelName": "TRAILNAME"
+  },
+  {
+   "name": "TrailSystem",
+   "type": "esriFieldTypeString",
+   "alias": "Trail System Name",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 150,
+   "defaultValue": null,
+   "modelName": "TRLSYTNAME"
+  },
+  {
+   "name": "RouteType",
+   "type": "esriFieldTypeString",
+   "alias": "Route Type",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedRouteType",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Not Specified",
+      "code": "Not Specified"
+     },
+     {
+      "name": "Paved shoulders provide for the accommodation of bicycles as well as disabled vehicles, delivery vehicles (ex: postal, garbage, etc.), and in the absence of sidewalks \u2014 pedestrian walkways. Shoulders differ from bike lanes since they typically have fluid dimensions. Shoulders frequently disappear in constrained areas or where traffic bypass or turn lanes are required. In contrast, bike lanes are continuous and have special designs so as to maintain dedicated bikeway space especially through right turn lanes and intersections",
+      "code": "Paved Shoulder"
+     },
+     {
+      "name": "A shared use trail is a two-way bikeway physically separated from motor vehicle traffic for biking, walking and other nonmotorized uses",
+      "code": "Separated Pathway/Shared Use Path"
+     },
+     {
+      "name": "A street marking placed in the travel lane to indicate where people preferably should cycle",
+      "code": "Sharrow"
+     },
+     {
+      "name": "Unknown",
+      "code": "Unknown"
+     },
+     {
+      "name": "A bike lane on street level protected from traffic by bollards, planters, parked cars or other barriers from moving traffic",
+      "code": "On-Street Bike Lane"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 75,
+   "defaultValue": null,
+   "modelName": "SPEC_TYPE"
+  },
+  {
+   "name": "ParallelRoad",
+   "type": "esriFieldTypeString",
+   "alias": "Parallel Road",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "PARL_RD"
+  },
+  {
+   "name": "Status",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Status",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedStatus",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Trail/bikeway is constructed and open to the public",
+      "code": "Existing"
+     },
+     {
+      "name": "Trail/bikeway is not currently existing",
+      "code": "Future"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "TRLSTATUS"
+  },
+  {
+   "name": "StateSystem",
+   "type": "esriFieldTypeString",
+   "alias": "State System",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedYesNo",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 5,
+   "defaultValue": null,
+   "modelName": "STATE_SYS"
+  },
+  {
+   "name": "RegionalSystem",
+   "type": "esriFieldTypeString",
+   "alias": "Regional System",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedYesNo",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 5,
+   "defaultValue": null,
+   "modelName": "REG_SYS"
+  },
+  {
+   "name": "CountySystem",
+   "type": "esriFieldTypeString",
+   "alias": "County System",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedYesNo",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 5,
+   "defaultValue": null,
+   "modelName": "CTY_SYS"
+  },
+  {
+   "name": "LocalSystem",
+   "type": "esriFieldTypeString",
+   "alias": "Local System",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedYesNo",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 5,
+   "defaultValue": null,
+   "modelName": "LOC_SYS"
+  },
+  {
+   "name": "Municipality",
+   "type": "esriFieldTypeString",
+   "alias": "Municipality",
+   "domain": {
+    "type": "codedValue",
+    "name": "NonMotorizedMunicipality",
+    "description": "Municipality",
+    "codedValues": [
+     {
+      "name": "Allegan County",
+      "code": "Allegan County"
+     },
+     {
+      "name": "Allendale Township",
+      "code": "Allendale Township"
+     },
+     {
+      "name": "Blendon Township",
+      "code": "Blendon Township"
+     },
+     {
+      "name": "Chester Township",
+      "code": "Chester Township"
+     },
+     {
+      "name": "City of Coopersville",
+      "code": "City of Coopersville"
+     },
+     {
+      "name": "City of Ferrysburg",
+      "code": "City of Ferrysburg"
+     },
+     {
+      "name": "City of Grand Haven",
+      "code": "City of Grand Haven"
+     },
+     {
+      "name": "City of Grand Rapids",
+      "code": "City of Grand Rapids"
+     },
+     {
+      "name": "City of Holland",
+      "code": "City of Holland"
+     },
+     {
+      "name": "City of Hudsonville",
+      "code": "City of Hudsonville"
+     },
+     {
+      "name": "City of Zeeland",
+      "code": "City of Zeeland"
+     },
+     {
+      "name": "Crockery Township",
+      "code": "Crockery Township"
+     },
+     {
+      "name": "Georgetown Township",
+      "code": "Georgetown Township"
+     },
+     {
+      "name": "Grand Haven Township",
+      "code": "Grand Haven Township"
+     },
+     {
+      "name": "Holland Township",
+      "code": "Holland Township"
+     },
+     {
+      "name": "Jamestown Township",
+      "code": "Jamestown Township"
+     },
+     {
+      "name": "Kent County",
+      "code": "Kent County"
+     },
+     {
+      "name": "Muskegon County",
+      "code": "Muskegon County"
+     },
+     {
+      "name": "Olive Township",
+      "code": "Olive Township"
+     },
+     {
+      "name": "Park Township",
+      "code": "Park Township"
+     },
+     {
+      "name": "Polkton Township",
+      "code": "Polkton Township"
+     },
+     {
+      "name": "Port Sheldon Township",
+      "code": "Port Sheldon Township"
+     },
+     {
+      "name": "Robinson Township",
+      "code": "Robinson Township"
+     },
+     {
+      "name": "Spring Lake Township",
+      "code": "Spring Lake Township"
+     },
+     {
+      "name": "Tallmadge Township",
+      "code": "Tallmadge Township"
+     },
+     {
+      "name": "Village of Spring Lake",
+      "code": "Village of Spring Lake"
+     },
+     {
+      "name": "Wright Township",
+      "code": "Wright Township"
+     },
+     {
+      "name": "Zeeland Township",
+      "code": "Zeeland Township"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "CITY_MUNI"
+  },
+  {
+   "name": "Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "Length",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "LENGTH"
+  },
+  {
+   "name": "Width",
+   "type": "esriFieldTypeDouble",
+   "alias": "Width",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "WIDTH"
+  },
+  {
+   "name": "GlobalID",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "domain": null,
+   "editable": false,
+   "nullable": false,
+   "length": 38,
+   "defaultValue": null,
+   "modelName": "GlobalID"
+  },
+  {
+   "name": "created_user",
+   "type": "esriFieldTypeString",
+   "alias": "created_user",
+   "domain": null,
+   "editable": false,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "created_user"
+  },
+  {
+   "name": "created_date",
+   "type": "esriFieldTypeDate",
+   "alias": "created_date",
+   "domain": null,
+   "editable": false,
+   "nullable": true,
+   "length": 8,
+   "defaultValue": null,
+   "modelName": "created_date"
+  },
+  {
+   "name": "last_edited_user",
+   "type": "esriFieldTypeString",
+   "alias": "last_edited_user",
+   "domain": null,
+   "editable": false,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "last_edited_user"
+  },
+  {
+   "name": "last_edited_date",
+   "type": "esriFieldTypeDate",
+   "alias": "last_edited_date",
+   "domain": null,
+   "editable": false,
+   "nullable": true,
+   "length": 8,
+   "defaultValue": null,
+   "modelName": "last_edited_date"
+  },
+  {
+   "name": "Shape__Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.STLength()",
+   "domain": null,
+   "editable": false,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "SHAPE.STLength()",
+   "required": true
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE",
+  "domain": null,
+  "editable": true,
+  "nullable": true,
+  "defaultValue": null,
+  "modelName": "SHAPE"
+ },
+ "indexes": [
+  {
+   "name": "R6168_pk",
+   "isAscending": true,
+   "isUnique": true,
+   "description": "",
+   "fields": "OBJECTID"
+  },
+  {
+   "name": "UUID_6168",
+   "isAscending": true,
+   "isUnique": false,
+   "description": "",
+   "fields": "GlobalID"
+  },
+  {
+   "name": "UUID_OID_6168",
+   "isAscending": true,
+   "isUnique": true,
+   "description": "",
+   "fields": "GlobalID,OBJECTID"
+  },
+  {
+   "name": "S4118_idx",
+   "isAscending": true,
+   "isUnique": true,
+   "description": "",
+   "fields": "SHAPE"
+  }
+ ],
+ "datesInUnknownTimezone": false,
+ "dateFieldsTimeReference": {
+  "timeZone": "UTC",
+  "timeZoneIANA": "Etc/UTC",
+  "respectsDaylightSaving": false
+ },
+ "preferredTimeReference": null,
+ "types": [
+  {
+   "id": "On-Street Bike Lane",
+   "name": "On-Street Bike Lane",
+   "domains": {
+    "RouteType": {
+     "type": "inherited"
+    },
+    "Status": {
+     "type": "inherited"
+    },
+    "StateSystem": {
+     "type": "inherited"
+    },
+    "RegionalSystem": {
+     "type": "inherited"
+    },
+    "CountySystem": {
+     "type": "inherited"
+    },
+    "LocalSystem": {
+     "type": "inherited"
+    },
+    "Municipality": {
+     "type": "inherited"
+    }
+   },
+   "templates": [
+    {
+     "name": "On-Street Bike Lane",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "TrailSystem": null,
+       "Width": null,
+       "ParallelRoad": null,
+       "NonMotorizedID": " ",
+       "TrailName": null,
+       "RouteType": "On-Street Bike Lane",
+       "Status": "Future",
+       "StateSystem": null,
+       "RegionalSystem": null,
+       "CountySystem": null,
+       "LocalSystem": null,
+       "Municipality": null,
+       "Length": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolLine"
+    }
+   ]
+  },
+  {
+   "id": "Paved Shoulder",
+   "name": "Paved Shoulder",
+   "domains": {
+    "RouteType": {
+     "type": "inherited"
+    },
+    "Status": {
+     "type": "inherited"
+    },
+    "StateSystem": {
+     "type": "inherited"
+    },
+    "RegionalSystem": {
+     "type": "inherited"
+    },
+    "CountySystem": {
+     "type": "inherited"
+    },
+    "LocalSystem": {
+     "type": "inherited"
+    },
+    "Municipality": {
+     "type": "inherited"
+    }
+   },
+   "templates": [
+    {
+     "name": "Paved Shoulder",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "TrailSystem": null,
+       "Width": null,
+       "ParallelRoad": null,
+       "NonMotorizedID": " ",
+       "TrailName": null,
+       "RouteType": "Paved Shoulder",
+       "Status": "Future",
+       "StateSystem": null,
+       "RegionalSystem": null,
+       "CountySystem": null,
+       "LocalSystem": null,
+       "Municipality": null,
+       "Length": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolLine"
+    }
+   ]
+  },
+  {
+   "id": "Sharrow",
+   "name": "Sharrow",
+   "domains": {
+    "RouteType": {
+     "type": "inherited"
+    },
+    "Status": {
+     "type": "inherited"
+    },
+    "StateSystem": {
+     "type": "inherited"
+    },
+    "RegionalSystem": {
+     "type": "inherited"
+    },
+    "CountySystem": {
+     "type": "inherited"
+    },
+    "LocalSystem": {
+     "type": "inherited"
+    },
+    "Municipality": {
+     "type": "inherited"
+    }
+   },
+   "templates": [
+    {
+     "name": "Sharrow",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "TrailSystem": null,
+       "Width": null,
+       "ParallelRoad": null,
+       "NonMotorizedID": " ",
+       "TrailName": null,
+       "RouteType": "Sharrow",
+       "Status": "Future",
+       "StateSystem": null,
+       "RegionalSystem": null,
+       "CountySystem": null,
+       "LocalSystem": null,
+       "Municipality": null,
+       "Length": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolLine"
+    }
+   ]
+  }
+ ],
+ "templates": [],
+ "maxRecordCount": 2000,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+ "capabilities": "Query,Sync,Extract",
+ "useStandardizedQueries": true,
+ "bigIntegerRestrictedTo53Bits": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "supportsAppend": true,
+ "supportedAppendFormats": "FILEGDB,PBF",
+ "standardMaxRecordCount": 8000,
+ "tileMaxRecordCount": 4000,
+ "standardMaxRecordCountNoGeometry": 32000,
+ "maxRecordCountFactor": 1,
+ "serviceItemId": "f608eb5fd7d845c882a6b48e4b106541"
+}

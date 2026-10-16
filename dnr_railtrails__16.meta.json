@@ -1,0 +1,770 @@
+{
+ "currentVersion": 11.3,
+ "cimVersion": "3.3.0",
+ "id": 16,
+ "name": "Statewide Railtrails",
+ "type": "Feature Layer",
+ "description": "A statewide line dataset of DNR and non-DNR managed trails.  This data is used to store information about the trail category (motorized, nonmotorized), and trail use types that include hiking, biking, equestrian, skiinig, snowshoeing, railtrails, ORV, snowmobile and water trails.  Products of this dataset include PDF maps, interactive maps, data downloads, and statistical dashboards.  Edits to this dataset will be made in the DNRTrailsFIELDEDIT (field staff) and DNRTrailsEDIT (data stewards) feature services in the DNR Portal.",
+ "geometryType": "esriGeometryPolyline",
+ "sourceSpatialReference": {
+  "wkid": 102123,
+  "latestWkid": 3078,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -28810000,
+  "falseY": -30359300,
+  "xyUnits": 10000,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "Michigan Department of Natural Resources",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 400000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "DNRTrail",
+   "uniqueValueGroups": [
+    {
+     "heading": "",
+     "classes": [
+      {
+       "label": "DNR Railtrail",
+       "description": "DNR Railtrail",
+       "symbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+         215,
+         176,
+         158,
+         255
+        ],
+        "width": 6
+       },
+       "values": [
+        [
+         "DNR Trail"
+        ]
+       ]
+      },
+      {
+       "label": "Non-DNR Railtrail",
+       "description": "Non-DNR Railtrail",
+       "symbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+         144,
+         62,
+         31,
+         255
+        ],
+        "width": 6
+       },
+       "values": [
+        [
+         "Non DNR Trail"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       215,
+       176,
+       158,
+       255
+      ],
+      "width": 6
+     },
+     "value": "DNR Trail",
+     "label": "DNR Railtrail"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       144,
+       62,
+       31,
+       255
+      ],
+      "width": 6
+     },
+     "value": "Non DNR Trail",
+     "label": "Non-DNR Railtrail"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        194,
+        252,
+        255
+       ],
+       "toColor": [
+        252,
+        194,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        252,
+        184,
+        255
+       ],
+       "toColor": [
+        189,
+        252,
+        184,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        221,
+        194,
+        255
+       ],
+       "toColor": [
+        252,
+        221,
+        194,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        244,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        244,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        187,
+        199,
+        252,
+        255
+       ],
+       "toColor": [
+        187,
+        199,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        251,
+        252,
+        182,
+        255
+       ],
+       "toColor": [
+        251,
+        252,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        182,
+        190,
+        255
+       ],
+       "toColor": [
+        252,
+        182,
+        190,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        210,
+        252,
+        224,
+        255
+       ],
+       "toColor": [
+        210,
+        252,
+        224,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        207,
+        227,
+        252,
+        255
+       ],
+       "toColor": [
+        207,
+        227,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        210,
+        240,
+        255
+       ],
+       "toColor": [
+        252,
+        210,
+        240,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        210,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        210,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        244,
+        252,
+        212,
+        255
+       ],
+       "toColor": [
+        244,
+        252,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        208,
+        204,
+        255
+       ],
+       "toColor": [
+        252,
+        208,
+        204,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 20,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 161578.74549999833,
+  "ymin": 126837.70120000094,
+  "xmax": 799802.3165000007,
+  "ymax": 848771.4979000017,
+  "spatialReference": {
+   "wkid": 102123,
+   "latestWkid": 3078,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -28810000,
+   "falseY": -30359300,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "TrailNamePrimary",
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "DNRTrail",
+   "type": "esriFieldTypeString",
+   "alias": "DNR Trail",
+   "length": 20
+  },
+  {
+   "name": "PRDManagementUnit",
+   "type": "esriFieldTypeString",
+   "alias": "PRD Management Unit",
+   "length": 100
+  },
+  {
+   "name": "PRDTrailUnit",
+   "type": "esriFieldTypeString",
+   "alias": "PRD Trail Unit",
+   "length": 100
+  },
+  {
+   "name": "TrailSiteType",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Site Type",
+   "length": 50
+  },
+  {
+   "name": "TrailApprovalStatus",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Approval Status",
+   "length": 50
+  },
+  {
+   "name": "TrailUseCategory",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Use Category",
+   "length": 50
+  },
+  {
+   "name": "OpenClosedStatusNonmotor",
+   "type": "esriFieldTypeString",
+   "alias": "Open/Closed Status Nonmotorized",
+   "length": 100
+  },
+  {
+   "name": "OpenClosedStatusORV",
+   "type": "esriFieldTypeString",
+   "alias": "Open/Closed Status ORV",
+   "length": 100
+  },
+  {
+   "name": "OpenClosedStatusSnowmobile",
+   "type": "esriFieldTypeString",
+   "alias": "Open/Closed Status Snowmobile",
+   "length": 100
+  },
+  {
+   "name": "TrailNamePrimary",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Name Primary",
+   "length": 300
+  },
+  {
+   "name": "RailtrailType",
+   "type": "esriFieldTypeString",
+   "alias": "Railtrail Type",
+   "length": 50
+  },
+  {
+   "name": "RailGradeName",
+   "type": "esriFieldTypeString",
+   "alias": "Rail Grade Name",
+   "length": 300
+  },
+  {
+   "name": "SurfaceType",
+   "type": "esriFieldTypeString",
+   "alias": "Surface Type",
+   "length": 100
+  },
+  {
+   "name": "TrailWidthFeet",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Width (Feet)",
+   "length": 50
+  },
+  {
+   "name": "TrailOnRoad",
+   "type": "esriFieldTypeString",
+   "alias": "Trail On Road?",
+   "length": 50
+  },
+  {
+   "name": "ADAAccessible",
+   "type": "esriFieldTypeString",
+   "alias": "ADA Accessible",
+   "length": 100
+  },
+  {
+   "name": "PublicComments",
+   "type": "esriFieldTypeString",
+   "alias": "Public Comments",
+   "length": 500
+  },
+  {
+   "name": "SegmentLengthMiles",
+   "type": "esriFieldTypeDouble",
+   "alias": "Segment Length (Miles)"
+  },
+  {
+   "name": "Hiking",
+   "type": "esriFieldTypeString",
+   "alias": "Hiking",
+   "length": 200
+  },
+  {
+   "name": "HikingName",
+   "type": "esriFieldTypeString",
+   "alias": "Hiking Name",
+   "length": 300
+  },
+  {
+   "name": "Biking",
+   "type": "esriFieldTypeString",
+   "alias": "Biking",
+   "length": 200
+  },
+  {
+   "name": "BikingName",
+   "type": "esriFieldTypeString",
+   "alias": "Biking Name",
+   "length": 300
+  },
+  {
+   "name": "Equestrian",
+   "type": "esriFieldTypeString",
+   "alias": "Equestrian",
+   "length": 200
+  },
+  {
+   "name": "EquestrianName",
+   "type": "esriFieldTypeString",
+   "alias": "Equestrian Name",
+   "length": 300
+  },
+  {
+   "name": "Skiing",
+   "type": "esriFieldTypeString",
+   "alias": "Skiing",
+   "length": 200
+  },
+  {
+   "name": "SkiingName",
+   "type": "esriFieldTypeString",
+   "alias": "Skiing Name",
+   "length": 300
+  },
+  {
+   "name": "Snowshoe",
+   "type": "esriFieldTypeString",
+   "alias": "Snowshoe",
+   "length": 200
+  },
+  {
+   "name": "SnowshoeName",
+   "type": "esriFieldTypeString",
+   "alias": "Snowshoe Name",
+   "length": 300
+  },
+  {
+   "name": "ORVRoute",
+   "type": "esriFieldTypeString",
+   "alias": "ORV Route",
+   "length": 200
+  },
+  {
+   "name": "ORVRouteName",
+   "type": "esriFieldTypeString",
+   "alias": "ORV Route Name",
+   "length": 300
+  },
+  {
+   "name": "Snowmobile",
+   "type": "esriFieldTypeString",
+   "alias": "Snowmobile",
+   "length": 200
+  },
+  {
+   "name": "SnowmobileName",
+   "type": "esriFieldTypeString",
+   "alias": "Snowmobile Name",
+   "length": 300
+  },
+  {
+   "name": "TrailROW",
+   "type": "esriFieldTypeString",
+   "alias": "TrailROW",
+   "length": 50
+  },
+  {
+   "name": "TrailOwnership",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Ownership",
+   "length": 300
+  },
+  {
+   "name": "TrailAdministrator",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Administrator",
+   "length": 300
+  },
+  {
+   "name": "TrailNetwork",
+   "type": "esriFieldTypeString",
+   "alias": "Trail Network",
+   "length": 300
+  },
+  {
+   "name": "SpecialRestrictionType",
+   "type": "esriFieldTypeString",
+   "alias": "Special Restriction Type",
+   "length": 300
+  },
+  {
+   "name": "SpecialDesignation",
+   "type": "esriFieldTypeString",
+   "alias": "Special Designation",
+   "length": 300
+  },
+  {
+   "name": "Peninsula",
+   "type": "esriFieldTypeString",
+   "alias": "Peninsula",
+   "length": 20
+  },
+  {
+   "name": "County",
+   "type": "esriFieldTypeString",
+   "alias": "County",
+   "length": 50
+  },
+  {
+   "name": "RecreationSearchFacilityID",
+   "type": "esriFieldTypeString",
+   "alias": "RecSearch FacilityId",
+   "length": 50
+  },
+  {
+   "name": "RecreationSearchTrailID",
+   "type": "esriFieldTypeString",
+   "alias": "RecSearch SiteId",
+   "length": 50
+  },
+  {
+   "name": "FacilityType",
+   "type": "esriFieldTypeString",
+   "alias": "Facility Type",
+   "length": 50
+  },
+  {
+   "name": "FacilityName",
+   "type": "esriFieldTypeString",
+   "alias": "Facility Name",
+   "length": 300
+  },
+  {
+   "name": "SiteType",
+   "type": "esriFieldTypeString",
+   "alias": "DNR Site Type",
+   "length": 50
+  },
+  {
+   "name": "SiteName",
+   "type": "esriFieldTypeString",
+   "alias": "Site Name",
+   "length": 300
+  },
+  {
+   "name": "GlobalID",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "length": 38
+  },
+  {
+   "name": "created_date",
+   "type": "esriFieldTypeDate",
+   "alias": "created_date",
+   "length": 8
+  },
+  {
+   "name": "last_edited_date",
+   "type": "esriFieldTypeDate",
+   "alias": "last_edited_date",
+   "length": 8
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "SHAPE"
+  },
+  {
+   "name": "Shape.STLength()",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape.STLength()"
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE"
+ },
+ "indexes": [
+  {
+   "name": "UUID_33",
+   "fields": "GlobalID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "gdb_ct3_33",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "S7_idx",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "hasZ": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {
+  "allowOthersToQuery": true
+ },
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true,
+  "supportsCurrentUserQueries": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeLengthFieldName": "Shape.STLength()",
+  "units": "esriMeters",
+  "mapUnits": {
+   "uwkid": 9001
+  }
+ },
+ "hasMetadata": true,
+ "isDataArchived": true,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": true,
+  "startArchivingMoment": 1766085344000
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

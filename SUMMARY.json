@@ -1,0 +1,147 @@
+{
+ "fetched": "2026-10-16T02:38:01Z",
+ "layers": [
+  {
+   "file": "osm_named_trails",
+   "elements": 1634,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "osm_gap_paths",
+   "elements": 1967,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "osm_battle_creek",
+   "elements": 180,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "osm_towns",
+   "elements": 350,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "osm_bluestar_roads",
+   "elements": 203,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "osm_berrien",
+   "elements": 477,
+   "license": "ODbL, (c) OpenStreetMap contributors"
+  },
+  {
+   "file": "gvmc_pathways__2",
+   "layer": "Pathways",
+   "features": 3055,
+   "lastEditDate": 1765217374622,
+   "url": "https://services5.arcgis.com/X42k956XlfnIoN3d/arcgis/rest/services/Asphalt_Pathways_WFL1/FeatureServer/2"
+  },
+  {
+   "file": "gvmc_onstreet__34",
+   "layer": "On Street Existing Bike Facility",
+   "features": 569,
+   "lastEditDate": 1695064922436,
+   "url": "https://services5.arcgis.com/X42k956XlfnIoN3d/arcgis/rest/services/On_Street_Existing_Bike_Facility/FeatureServer/34"
+  },
+  {
+   "file": "gvmc_tip_onstreet__0",
+   "layer": "OnStreetBikeFY26_29TIP",
+   "features": 106,
+   "lastEditDate": 1725990919746,
+   "url": "https://services5.arcgis.com/X42k956XlfnIoN3d/arcgis/rest/services/OnStreetBikeFY26_29TIP/FeatureServer/0"
+  },
+  {
+   "file": "gvmc_tip_offstreet__0",
+   "layer": "OffStSharedUseFY26_29TIP",
+   "features": 126,
+   "lastEditDate": 1725990882532,
+   "url": "https://services5.arcgis.com/X42k956XlfnIoN3d/arcgis/rest/services/OffStSharedUseFY26_29TIP/FeatureServer/0"
+  },
+  {
+   "file": "gvmc_river_trail__0",
+   "layer": "Tail_Edits",
+   "features": 49,
+   "lastEditDate": 1546537370209,
+   "url": "https://services5.arcgis.com/X42k956XlfnIoN3d/arcgis/rest/services/River_Trail/FeatureServer/0"
+  },
+  {
+   "file": "ottawa_nonmotorized__0",
+   "layer": "Existing Paved Shoulders & On-Street Bike Lanes",
+   "features": 2383,
+   "lastEditDate": null,
+   "url": "https://gis.miottawa.org/arcgis/rest/services/HostedServices/NonMotorizedPathways/FeatureServer/0"
+  },
+  {
+   "file": "ottawa_nonmotorized__1",
+   "layer": "Future Paved Shoulders & On-Street Bike Lanes",
+   "features": 251,
+   "lastEditDate": null,
+   "url": "https://gis.miottawa.org/arcgis/rest/services/HostedServices/NonMotorizedPathways/FeatureServer/1"
+  },
+  {
+   "file": "ottawa_nonmotorized__2",
+   "layer": "Existing Separated Pathways & Multi-Use Paths",
+   "features": 2383,
+   "lastEditDate": null,
+   "url": "https://gis.miottawa.org/arcgis/rest/services/HostedServices/NonMotorizedPathways/FeatureServer/2"
+  },
+  {
+   "file": "ottawa_nonmotorized__3",
+   "layer": "Future Separated Pathways & Multi-Use Paths",
+   "features": 251,
+   "lastEditDate": null,
+   "url": "https://gis.miottawa.org/arcgis/rest/services/HostedServices/NonMotorizedPathways/FeatureServer/3"
+  },
+  {
+   "file": "dnr_railtrails__16",
+   "layer": "Statewide Railtrails",
+   "features": 126,
+   "lastEditDate": null,
+   "url": "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"
+  },
+  {
+   "file": "dnr_biking__3",
+   "layer": "DNR Biking Trails",
+   "features": 287,
+   "lastEditDate": null,
+   "url": "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/3"
+  },
+  {
+   "file": "dnr_whitepine__16",
+   "layer": "Statewide Railtrails",
+   "features": 27,
+   "lastEditDate": null,
+   "url": "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"
+  },
+  {
+   "file": "calhoun_trails__9",
+   "layer": "Battle Creek Linear Park",
+   "features": 37,
+   "lastEditDate": 1654787462600,
+   "url": "https://services7.arcgis.com/3kp3Io7Dw56fpgk8/arcgis/rest/services/Trail/FeatureServer/9"
+  },
+  {
+   "file": "calhoun_trails__1",
+   "layer": "Calhoun County Trailway",
+   "features": 5,
+   "lastEditDate": 1654787462600,
+   "url": "https://services7.arcgis.com/3kp3Io7Dw56fpgk8/arcgis/rest/services/Trail/FeatureServer/1"
+  },
+  {
+   "file": "calhoun_trails__0",
+   "layer": "North Country Trail",
+   "features": 51,
+   "lastEditDate": 1654787462600,
+   "url": "https://services7.arcgis.com/3kp3Io7Dw56fpgk8/arcgis/rest/services/Trail/FeatureServer/0"
+  },
+  {
+   "file": "kats_existing__0",
+   "layer": "Existing Facilities October 2026",
+   "features": 9068,
+   "lastEditDate": 1791405148335,
+   "url": "https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer/0"
+  }
+ ]
+}
