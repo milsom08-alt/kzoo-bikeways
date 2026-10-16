@@ -175,7 +175,23 @@
   function onShape(e, f, Ly){
     L.DomEvent.stopPropagation(e);
     if (routing){ addPoint(e.latlng); return; }
-    L.popup().setLatLng(e.latlng).setContent(popup(f, Ly.name, f.c)).openOn(map);
+    L.popup().setLatLng(snapTo(e.target, e.latlng)).setContent(popup(f, Ly.name, f.c)).openOn(map);
+  }
+  // Point on the tapped shape nearest the tap, so the popup sits on the line, not beside it
+  function snapTo(shape, latlng){
+    if (shape.getRadius) return shape.getLatLng();          // point marker: its center
+    var ll = shape.getLatLngs(); if (!ll.length) return latlng;
+    if (Array.isArray(ll[0])) ll = [].concat.apply([], ll);
+    var p = map.latLngToContainerPoint(latlng), best = null, bestD = Infinity;
+    var prev = map.latLngToContainerPoint(ll[0]);
+    if (ll.length === 1) return ll[0];
+    for (var i = 1; i < ll.length; i++){
+      var cur = map.latLngToContainerPoint(ll[i]);
+      var q = L.LineUtil.closestPointOnSegment(p, prev, cur), d = q.distanceTo(p);
+      if (d < bestD){ bestD = d; best = q; }
+      prev = cur;
+    }
+    return best ? map.containerPointToLatLng(best) : latlng;
   }
 
   var SOURCES = [];
