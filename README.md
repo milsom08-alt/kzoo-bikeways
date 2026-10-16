@@ -17,6 +17,8 @@ An interactive web map of bikeways in the Kalamazoo region, the Grand Rapids are
 - New since that data: Ann St separated bike lanes (2025), Wyoming 28th St pedestrian bridge (2025), Idema Explorers Trail Bayou segment (2025), Ada Thornapple River pedestrian bridge (2026), rebuilt Musketawa Trail (2026).
 - Under construction: Grand River Greenway segments in Plainfield, Cannon and Ada townships (Rogue River Dr trail, Northland Dr tunnel and trails, Pettis Ave trail, Knapp St bridge), Grand River Edges Trail segments in Grand Rapids, Oxford Trail extension, Idema Explorers Trail Bass River segment.
 
+**In between and beyond** – Van Buren Trail (South Haven–Hartford), Van Buren Spur, Blue Star and Beeline trails (Saugatuck area), Paul Henry–Thornapple Trail and Hastings Riverwalk (Barry County), Plainwell–Otsego path and other paths from Michigan DNR and OpenStreetMap data; the Fred Meijer White Pine Trail extended to Cadillac. Paths taken from OpenStreetMap are © OpenStreetMap contributors and available under the Open Database License (ODbL).
+
 Every line's popup names its source; added projects list their status, dates and sources. Planned dates can change. Use at your own risk.
 
 ## Files

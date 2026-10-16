@@ -27030,6 +27030,681 @@
     </LineString>
    </Placemark>
    <Placemark>
+    <name>Van Buren Spur Trail</name>
+    <description>Shared-use rail-trail, asphalt.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"&gt;Michigan DNR statewide rail-trails&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.2781,42.35943,0 -86.27838,42.35885,0 -86.2838,42.35471,0 -86.28515,42.35349,0 -86.28622,42.35241,0 -86.28738,42.3508,0 -86.28784,42.35008,0 -86.28833,42.34907,0 -86.29112,42.3426,0 -86.2917,42.3419,0 -86.29255,42.34074,0 -86.29274,42.34006,0 -86.29276,42.33865,0 -86.29439,42.33458,0 -86.2946,42.33415,0 -86.29525,42.33326,0 -86.29645,42.33226,0 -86.29724,42.33218,0 -86.29798,42.33237,0 -86.30041,42.33241,0 -86.30094,42.33233,0 -86.3021,42.3319,0 -86.30263,42.33177,0 -86.30355,42.33175,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Van Buren Trail State Park</name>
+    <description>Shared-use rail-trail, dirt natural. Unpaved – best on wider tires.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.michigan.gov/recsearch/parks/vanburentrail"&gt;Michigan DNR&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"&gt;Michigan DNR statewide rail-trails&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.17113,42.21071,0 -86.17259,42.21069,0 -86.17623,42.21121,0 -86.17748,42.2115,0 -86.17791,42.21165,0 -86.17879,42.21206,0 -86.18376,42.215,0 -86.18946,42.21741,0 -86.19243,42.21872,0 -86.19302,42.21909,0 -86.19459,42.22036,0 -86.19756,42.22299,0 -86.19793,42.22338,0 -86.19891,42.22477,0 -86.19909,42.22493,0 -86.19914,42.2251,0 -86.2001,42.22649,0 -86.20092,42.2273,0 -86.20601,42.23043,0 -86.20652,42.2308,0 -86.20709,42.23134,0 -86.21536,42.24339,0 -86.21631,42.24515,0 -86.21642,42.2455,0 -86.21661,42.24576,0 -86.21805,42.24859,0 -86.21821,42.24877,0 -86.21977,42.25197,0 -86.22024,42.25284,0 -86.22376,42.25803,0 -86.22446,42.25877,0 -86.22505,42.25919,0 -86.22785,42.26164,0 -86.22791,42.26178,0 -86.229,42.26275,0 -86.23014,42.26434,0 -86.23086,42.26549,0 -86.23124,42.26597,0 -86.23193,42.26669,0 -86.2396,42.27413,0 -86.24393,42.27791,0 -86.24881,42.28297,0 -86.24953,42.284,0 -86.25294,42.28942,0 -86.25384,42.2906,0 -86.25399,42.29089,0 -86.25727,42.29499,0 -86.25851,42.2959,0 -86.25938,42.29644,0 -86.25997,42.2969,0 -86.26019,42.29699,0 -86.26147,42.29786,0 -86.26216,42.29843,0 -86.26272,42.29904,0 -86.26383,42.30097,0 -86.2639,42.30122,0 -86.26429,42.30199,0 -86.2647,42.30313,0 -86.26495,42.30416,0 -86.26498,42.30513,0 -86.26512,42.30539,0 -86.26494,42.30665,0 -86.26502,42.30838,0 -86.26496,42.30858,0 -86.26494,42.31012,0 -86.26499,42.31136,0 -86.26519,42.31212,0 -86.26555,42.3128,0 -86.26588,42.31327,0 -86.27126,42.31983,0 -86.27206,42.32095,0 -86.27221,42.32139,0 -86.27235,42.32218,0 -86.27239,42.32663,0 -86.27237,42.32845,0 -86.27233,42.32871,0 -86.27238,42.32925,0 -86.27232,42.32951,0 -86.27234,42.33087,0 -86.2725,42.33654,0 -86.27256,42.33682,0 -86.27254,42.33766,0 -86.27261,42.33822,0 -86.27276,42.33875,0 -86.27301,42.33916,0 -86.27343,42.34013,0 -86.27362,42.34039,0 -86.27367,42.34064,0 -86.27753,42.34835,0 -86.27773,42.34909,0 -86.2778,42.34973,0 -86.27792,42.35469,0 -86.27798,42.35509,0 -86.27797,42.35595,0 -86.27806,42.35721,0 -86.27804,42.35797,0 -86.27814,42.35887,0 -86.27809,42.35904,0 -86.2781,42.3599,0 -86.28634,42.35986,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Van Buren Trail State Park</name>
+    <description>Shared-use rail-trail, asphalt.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.michigan.gov/recsearch/parks/vanburentrail"&gt;Michigan DNR&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"&gt;Michigan DNR statewide rail-trails&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.2781,42.3599,0 -86.27821,42.36283,0 -86.27818,42.36359,0 -86.27832,42.37139,0 -86.2783,42.37343,0 -86.27837,42.37443,0 -86.27877,42.38869,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Fred Meijer White Pine Trail State Park</name>
+    <description>Shared-use rail-trail, asphalt. Comstock Park to Cadillac, about 92 mi.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.michigan.gov/whitepinetrail"&gt;Michigan DNR&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer/16"&gt;Michigan DNR statewide rail-trails&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.51355,43.29416,0 -85.50431,43.30871,0 -85.48847,43.33387,0 -85.48753,43.33585,0 -85.48692,43.33775,0 -85.48299,43.35165,0 -85.47141,43.39298,0 -85.47071,43.39556,0 -85.47035,43.39715,0 -85.46913,43.40123,0 -85.46733,43.40767,0 -85.46744,43.40792,0 -85.46716,43.40825,0 -85.46659,43.41028,0 -85.45819,43.44066,0 -85.44882,43.47549,0 -85.44826,43.47738,0 -85.44586,43.48328,0 -85.44551,43.48556,0 -85.44546,43.48942,0 -85.44561,43.49088,0 -85.45135,43.51356,0 -85.45118,43.51581,0 -85.4507,43.51666,0 -85.44987,43.51759,0 -85.44639,43.52022,0 -85.4456,43.52136,0 -85.44524,43.52267,0 -85.44482,43.52455,0 -85.44391,43.52595,0 -85.43973,43.53147,0 -85.43891,43.53335,0 -85.43868,43.53481,0 -85.43865,43.5603,0 -85.43891,43.56233,0 -85.43954,43.56375,0 -85.45279,43.58274,0 -85.45357,43.58412,0 -85.4539,43.5855,0 -85.45396,43.58679,0 -85.45292,43.60093,0 -85.45258,43.60113,0 -85.45256,43.60151,0 -85.45273,43.60175,0 -85.45284,43.6023,0 -85.45212,43.61157,0 -85.45179,43.61342,0 -85.45126,43.61459,0 -85.44215,43.62951,0 -85.44018,43.63262,0 -85.43939,43.63501,0 -85.43932,43.6378,0 -85.43932,43.64339,0 -85.43956,43.6454,0 -85.44824,43.67044,0 -85.45026,43.67601,0 -85.45064,43.67674,0 -85.45105,43.67714,0 -85.45097,43.67733,0 -85.45185,43.67815,0 -85.45574,43.68276,0 -85.48644,43.7183,0 -85.48688,43.71907,0 -85.48756,43.72093,0 -85.48762,43.7224,0 -85.48767,43.74951,0 -85.4876,43.7535,0 -85.48792,43.75676,0 -85.48867,43.75869,0 -85.4898,43.76035,0 -85.4963,43.76677,0 -85.49763,43.76797,0 -85.49976,43.76935,0 -85.50147,43.77062,0 -85.50205,43.77144,0 -85.50236,43.7723,0 -85.50237,43.77679,0 -85.50219,43.7872,0 -85.50214,43.78936,0 -85.50196,43.79096,0 -85.50041,43.7962,0 -85.49802,43.80382,0 -85.49267,43.822,0 -85.49248,43.82954,0 -85.49243,43.83471,0 -85.49283,43.83583,0 -85.49474,43.83809,0 -85.49738,43.84104,0 -85.49951,43.84418,0 -85.50006,43.84593,0 -85.50068,43.84752,0 -85.50278,43.8506,0 -85.50778,43.87292,0 -85.50761,43.87326,0 -85.50729,43.87362,0 -85.50712,43.87523,0 -85.50735,43.87592,0 -85.50858,43.87651,0 -85.50968,43.88129,0 -85.51017,43.88379,0 -85.51404,43.90166,0 -85.51868,43.92664,0 -85.52001,43.93267,0 -85.52165,43.93788,0 -85.52193,43.93988,0 -85.52154,43.94179,0 -85.52018,43.94452,0 -85.51377,43.95696,0 -85.51243,43.95888,0 -85.51157,43.95969,0 -85.50823,43.964,0 -85.50739,43.96622,0 -85.50217,43.98679,0 -85.50061,43.9934,0 -85.50068,44.00236,0 -85.49878,44.00946,0 -85.49788,44.01121,0 -85.49713,44.01203,0 -85.49609,44.01273,0 -85.48916,44.01693,0 -85.47177,44.02733,0 -85.4661,44.03148,0 -85.45995,44.03524,0 -85.4585,44.0359,0 -85.45403,44.03685,0 -85.45159,44.03799,0 -85.44944,44.03915,0 -85.44769,44.04025,0 -85.44668,44.04129,0 -85.44607,44.04241,0 -85.44583,44.04383,0 -85.44884,44.05695,0 -85.44915,44.05763,0 -85.44919,44.05994,0 -85.4486,44.06434,0 -85.45041,44.07345,0 -85.45571,44.09927,0 -85.45748,44.10289,0 -85.45772,44.10378,0 -85.45833,44.10883,0 -85.45683,44.12876,0 -85.45387,44.13851,0 -85.45314,44.14009,0 -85.45089,44.14254,0 -85.44379,44.14997,0 -85.44156,44.15333,0 -85.43587,44.16248,0 -85.43423,44.16728,0 -85.43397,44.16882,0 -85.43434,44.16988,0 -85.43524,44.17083,0 -85.43643,44.17144,0 -85.43801,44.17216,0 -85.4385,44.17253,0 -85.44111,44.17616,0 -85.44443,44.17833,0 -85.44601,44.17999,0 -85.45283,44.18797,0 -85.45349,44.18907,0 -85.45388,44.19026,0 -85.45389,44.19094,0 -85.45331,44.1941,0 -85.45234,44.20028,0 -85.45191,44.20151,0 -85.45085,44.20311,0 -85.44573,44.2089,0 -85.44336,44.21148,0 -85.44142,44.21258,0 -85.43261,44.2148,0 -85.43148,44.21526,0 -85.43037,44.21602,0 -85.42951,44.21729,0 -85.42835,44.22077,0 -85.42648,44.22286,0 -85.41677,44.23193,0 -85.41666,44.23218,0 -85.41634,44.23237,0 -85.41483,44.23373,0 -85.41461,44.23408,0 -85.4143,44.23423,0 -85.40871,44.23947,0 -85.40798,44.2401,0 -85.40687,44.24073,0 -85.40555,44.24136,0 -85.40216,44.24265,0 -85.40051,44.24339,0 -85.39958,44.24427,0 -85.39941,44.24457,0 -85.39928,44.24497,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.12681,42.78201,0 -86.12676,42.77931,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.09505,42.79048,0 -86.09277,42.79051,0 -86.09276,42.79131,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.47112,42.61583,0 -85.47119,42.6161,0 -85.4712,42.62097,0 -85.4713,42.62379,0 -85.47126,42.62407,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.50641,42.63152,0 -85.50593,42.63123,0 -85.50587,42.63097,0 -85.5055,42.63017,0 -85.50521,42.62979,0 -85.50497,42.62951,0 -85.5044,42.62915,0 -85.50384,42.62902,0 -85.5033,42.62883,0 -85.50123,42.62868,0 -85.49914,42.62811,0 -85.49883,42.62792,0 -85.49851,42.62752,0 -85.49803,42.62673,0 -85.49772,42.62635,0 -85.49757,42.62598,0 -85.49742,42.62527,0 -85.49696,42.62462,0 -85.49663,42.62433,0 -85.4965,42.62411,0 -85.49647,42.62373,0 -85.4961,42.623,0 -85.49589,42.62237,0 -85.49573,42.62214,0 -85.49573,42.62152,0 -85.49464,42.62117,0 -85.49392,42.62079,0 -85.49308,42.62027,0 -85.49132,42.62027,0 -85.49089,42.62022,0 -85.49077,42.61823,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.83152,42.16911,0 -85.83278,42.1694,0 -85.84136,42.16899,0 -85.84223,42.16888,0 -85.84224,42.16897,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.16682,42.77521,0 -86.16651,42.77527,0 -86.15702,42.77544,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.15692,42.77544,0 -86.15549,42.77523,0 -86.15485,42.77508,0 -86.15128,42.77407,0 -86.15039,42.77408,0 -86.14981,42.7742,0 -86.14315,42.77745,0 -86.1415,42.77808,0 -86.13393,42.7814,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.24896,42.40366,0 -86.24898,42.40383,0 -86.252,42.40369,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.25288,42.40366,0 -86.25557,42.4036,0 -86.25574,42.40364,0 -86.25625,42.40359,0 -86.25901,42.40359,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.21206,42.6364,0 -86.21201,42.63688,0 -86.21185,42.63712,0 -86.21172,42.63752,0 -86.21111,42.63859,0 -86.20795,42.64259,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.01879,42.79872,0 -86.01891,42.80306,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.68657,42.45459,0 -85.68436,42.45299,0 -85.68392,42.45276,0 -85.6811,42.451,0 -85.68099,42.45102,0 -85.67959,42.45032,0 -85.67842,42.45001,0 -85.67734,42.44995,0 -85.67215,42.44992,0 -85.67149,42.44985,0 -85.67128,42.44989,0 -85.66012,42.4498,0 -85.65972,42.44978,0 -85.6578,42.44953,0 -85.65773,42.4494,0 -85.65729,42.44938,0 -85.65661,42.44924,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.65592,42.44901,0 -85.6544,42.44839,0 -85.65169,42.44716,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.0899,42.79343,0 -86.09007,42.7935,0 -86.09049,42.79349,0 -86.09078,42.79352,0 -86.0911,42.79369,0 -86.09142,42.79365,0 -86.09199,42.79348,0 -86.09217,42.79348,0 -86.09246,42.79369,0 -86.09278,42.79374,0 -86.09305,42.79391,0 -86.09318,42.7939,0 -86.09438,42.79254,0 -86.09437,42.79209,0 -86.09428,42.7918,0 -86.09402,42.79156,0 -86.09368,42.79143,0 -86.09288,42.79153,0 -86.09276,42.79163,0 -86.09238,42.79173,0 -86.09105,42.79164,0 -86.09071,42.7921,0 -86.0901,42.79255,0 -86.08969,42.79319,0 -86.08974,42.79333,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.87411,42.53539,0 -85.87385,42.53489,0 -85.87192,42.53178,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.25634,42.4191,0 -86.25646,42.41897,0 -86.25687,42.41895,0 -86.25793,42.41926,0 -86.26289,42.41926,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.16706,42.68337,0 -86.16359,42.68462,0 -86.1632,42.68481,0 -86.16242,42.6851,0 -86.16157,42.68531,0 -86.15968,42.68596,0 -86.15954,42.68604,0 -86.15641,42.68705,0 -86.15549,42.68741,0 -86.15527,42.68742,0 -86.15476,42.6877,0 -86.15311,42.68824,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.41744,42.6872,0 -85.41991,42.6868,0 -85.42767,42.68468,0 -85.42886,42.68429,0 -85.43194,42.68342,0 -85.43526,42.68278,0 -85.43779,42.68279,0 -85.43952,42.68299,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.44002,42.68308,0 -85.44186,42.68356,0 -85.44317,42.68401,0 -85.4445,42.68466,0 -85.44555,42.68533,0 -85.44688,42.68643,0 -85.44904,42.68908,0 -85.45389,42.69479,0 -85.45517,42.69707,0 -85.45544,42.69791,0 -85.45668,42.70423,0 -85.45707,42.70561,0 -85.4575,42.70645,0 -85.45833,42.70758,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.45971,42.70887,0 -85.46034,42.70929,0 -85.46139,42.70978,0 -85.46351,42.71052,0 -85.46435,42.71062,0 -85.46456,42.71074,0 -85.46472,42.71091,0 -85.46496,42.71103,0 -85.46502,42.71124,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.45843,42.7077,0 -85.45881,42.70813,0 -85.45957,42.70875,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.12303,42.79806,0 -86.11753,42.80044,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.01879,42.79872,0 -86.01879,42.798,0 -86.02152,42.79803,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.19646,42.76163,0 -86.19609,42.76158,0 -86.18839,42.76158,0 -86.17683,42.7615,0 -86.17693,42.76803,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.1767,42.7615,0 -86.16522,42.76158,0 -86.16493,42.76169,0 -86.16433,42.76171,0 -86.16407,42.76162,0 -86.16393,42.76163,0 -86.16374,42.76172,0 -86.16289,42.76174,0 -86.16232,42.7616,0 -86.15679,42.76164,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.19646,42.76149,0 -86.19663,42.76494,0 -86.19679,42.76502,0 -86.19698,42.76521,0 -86.19703,42.76586,0 -86.19695,42.76595,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.52206,42.79602,0 -85.52246,42.79632,0 -85.5225,42.79643,0 -85.5224,42.79687,0 -85.52226,42.79703,0 -85.52201,42.79721,0 -85.52143,42.7974,0 -85.52076,42.79741,0 -85.52046,42.79735,0 -85.51998,42.79703,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.15668,42.76163,0 -86.14358,42.7615,0 -86.13991,42.7615,0 -86.13703,42.76145,0 -86.13693,42.76148,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.15679,42.76828,0 -86.15676,42.76847,0 -86.15697,42.7739,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.51721,42.79305,0 -85.51762,42.79308,0 -85.51796,42.7933,0 -85.51809,42.79353,0 -85.51813,42.794,0 -85.5173,42.79517,0 -85.517,42.79574,0 -85.51691,42.79634,0 -85.51697,42.79721,0 -85.5169,42.7973,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.09281,42.79716,0 -86.09253,42.79636,0 -86.09254,42.79617,0 -86.09288,42.79535,0 -86.09326,42.79466,0 -86.09349,42.79433,0 -86.09355,42.79432,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.18146,42.79571,0 -86.18147,42.79486,0 -86.18139,42.79476,0 -86.18063,42.79463,0 -86.17986,42.79431,0 -86.17917,42.79424,0 -86.17935,42.79445,0 -86.17962,42.79458,0 -86.17963,42.79466,0 -86.17939,42.79476,0 -86.179,42.79476,0 -86.1787,42.79483,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.025,42.79804,0 -86.0278,42.79799,0 -86.02831,42.79802,0 -86.02989,42.79798,0 -86.03275,42.798,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Old Allegan Road</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.10688,42.65194,0 -86.10696,42.65233,0 -86.10738,42.6524,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Salem Township Park</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.84191,42.72558,0 -85.84221,42.7256,0 -85.84232,42.72585,0 -85.84258,42.72586,0 -85.84266,42.72605,0 -85.84263,42.72632,0 -85.84251,42.72645,0 -85.84291,42.72671,0 -85.8429,42.72683,0 -85.84244,42.727,0 -85.84231,42.72721,0 -85.84245,42.72743,0 -85.84287,42.72764,0 -85.84293,42.72773,0 -85.84291,42.72804,0 -85.84252,42.72815,0 -85.84164,42.72816,0 -85.84156,42.72809,0 -85.84155,42.72768,0 -85.84207,42.72705,0 -85.84213,42.72691,0 -85.842,42.72657,0 -85.84224,42.72626,0 -85.84221,42.72614,0 -85.84207,42.72609,0 -85.84162,42.7261,0 -85.84164,42.72596,0 -85.84146,42.72576,0 -85.84147,42.72558,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.29302,42.65151,0 -85.29329,42.65148,0 -85.2937,42.65156,0 -85.29363,42.65113,0 -85.29381,42.65075,0 -85.29377,42.64976,0 -85.29383,42.64973,0 -85.29462,42.64972,0 -85.2972,42.64957,0 -85.30317,42.64956,0 -85.30329,42.64951,0 -85.30325,42.64882,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.28629,42.64979,0 -85.28629,42.65019,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.29119,42.65179,0 -85.29114,42.6518,0 -85.29104,42.65161,0 -85.2908,42.6516,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.28606,42.64978,0 -85.28515,42.64972,0 -85.28376,42.64921,0 -85.28283,42.6487,0 -85.28167,42.64789,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.28151,42.64777,0 -85.28107,42.64744,0 -85.28086,42.64719,0 -85.27927,42.64605,0 -85.27897,42.64591,0 -85.2773,42.64482,0 -85.27483,42.64306,0 -85.27458,42.64294,0 -85.27184,42.64079,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.29283,42.6516,0 -85.29243,42.65163,0 -85.29211,42.65171,0 -85.29146,42.65166,0 -85.29127,42.65177,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.28903,42.65123,0 -85.28832,42.65127,0 -85.28815,42.65124,0 -85.28786,42.65111,0 -85.28736,42.65074,0 -85.28655,42.65036,0 -85.28629,42.65034,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beeline Trail</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.17418,42.6805,0 -86.17445,42.68865,0 -86.17453,42.68921,0 -86.17445,42.68946,0 -86.17455,42.69011,0 -86.17451,42.6902,0 -86.17461,42.69255,0 -86.17461,42.69394,0 -86.17472,42.69556,0 -86.17468,42.69594,0 -86.17163,42.69595,0 -86.17149,42.69598,0 -86.1713,42.69613,0 -86.17135,42.69969,0 -86.1713,42.69992,0 -86.17114,42.70006,0 -86.17088,42.70047,0 -86.1706,42.70065,0 -86.17039,42.70072,0 -86.17033,42.70094,0 -86.17011,42.70111,0 -86.17018,42.70137,0 -86.17038,42.70154,0 -86.17041,42.7017,0 -86.17039,42.70247,0 -86.17028,42.70305,0 -86.17011,42.70341,0 -86.17004,42.70371,0 -86.17007,42.70406,0 -86.16986,42.7045,0 -86.16968,42.7057,0 -86.16968,42.70615,0 -86.16864,42.71053,0 -86.16471,42.71837,0 -86.1616,42.72328,0 -86.15991,42.72689,0 -86.15712,42.7323,0 -86.15603,42.73447,0 -86.15593,42.7348,0 -86.15589,42.73528,0 -86.15594,42.73961,0 -86.15625,42.7477,0 -86.15657,42.7542,0 -86.15679,42.76164,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beeline Trail</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.15679,42.76828,0 -86.15685,42.76815,0 -86.15686,42.76669,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.17481,42.68031,0 -86.17508,42.68006,0 -86.17592,42.67969,0 -86.17602,42.67959,0 -86.17814,42.67881,0 -86.17873,42.67866,0 -86.18111,42.67783,0 -86.18185,42.67753,0 -86.18296,42.677,0 -86.18428,42.67622,0 -86.18772,42.67364,0 -86.18786,42.67348,0 -86.18887,42.67277,0 -86.18945,42.67225,0 -86.18986,42.67203,0 -86.19259,42.66996,0 -86.19273,42.66979,0 -86.19419,42.66863,0 -86.1945,42.66832,0 -86.19669,42.6665,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.20711,42.64368,0 -86.20611,42.64455,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.20604,42.64473,0 -86.20589,42.64478,0 -86.20486,42.6455,0 -86.2042,42.64587,0 -86.20261,42.64662,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Lakeshore Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.20711,42.77298,0 -86.207,42.77289,0 -86.20649,42.77271,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.4651,42.71132,0 -85.46541,42.71162,0 -85.46535,42.71187,0 -85.46553,42.71212,0 -85.4658,42.71268,0 -85.46607,42.71287,0 -85.46614,42.71308,0 -85.46624,42.71315,0 -85.46622,42.71335,0 -85.46641,42.71363,0 -85.46638,42.71378,0 -85.46609,42.71388,0 -85.46601,42.714,0 -85.46598,42.71448,0 -85.46611,42.71646,0 -85.4662,42.71696,0 -85.46667,42.71816,0 -85.4669,42.71844,0 -85.46702,42.71867,0 -85.46727,42.71883,0 -85.46743,42.71918,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.46772,42.72345,0 -85.4677,42.72353,0 -85.46785,42.72387,0 -85.46771,42.72427,0 -85.4675,42.72464,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.46805,42.72547,0 -85.468,42.72515,0 -85.46757,42.72485,0 -85.4675,42.72475,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.46748,42.71926,0 -85.46759,42.71954,0 -85.4676,42.72025,0 -85.4678,42.72092,0 -85.46781,42.72142,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.46781,42.72151,0 -85.4678,42.7219,0 -85.46771,42.72229,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.46772,42.72239,0 -85.46771,42.72285,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Van Buren Trail State Park</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.michigan.gov/recsearch/parks/vanburentrail"&gt;Michigan DNR&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.27866,42.38506,0 -86.27877,42.38875,0 -86.27898,42.39,0 -86.27898,42.3907,0 -86.27908,42.3912,0 -86.27941,42.39195,0 -86.27947,42.39231,0 -86.27935,42.39231,0 -86.27939,42.39301,0 -86.27949,42.39342,0 -86.27953,42.39636,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beeline Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.15686,42.76669,0 -86.15677,42.76178,0 -86.15668,42.76163,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beeline Trail</name>
+    <description>Shared-use path, asphalt. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.19669,42.6665,0 -86.19805,42.66532,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.19098,42.66536,0 -86.19071,42.66059,0 -86.19074,42.66004,0 -86.19048,42.65624,0 -86.19049,42.65595,0 -86.19061,42.65555,0 -86.19066,42.65503,0 -86.1909,42.65465,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path, paved. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.1909,42.65457,0 -86.19089,42.65452,0 -86.19073,42.65444,0 -86.1907,42.65433,0 -86.19092,42.65374,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shortcut</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.47449,42.62523,0 -85.47487,42.62502,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shortcut</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.47689,42.62751,0 -85.47708,42.62767,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shortcut</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.48566,42.63176,0 -85.48618,42.63153,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.19809,42.64868,0 -86.19605,42.64966,0 -86.19598,42.64977,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.20237,42.64672,0 -86.20093,42.64739,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Blue Star Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://saugatucktownshipmi.gov/departments/parks-recreation/parks/blue-star-trail/"&gt;Saugatuck Township&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.20005,42.64777,0 -86.19839,42.64854,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Paul Henry–Thornapple Trail</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Trail website:&lt;/b&gt; &lt;a href="https://www.kentcountymi.gov/519/Paul-Henry-Thornapple-Trail"&gt;Kent County Parks&lt;/a&gt;&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.527,42.79704,0 -85.527,42.79699,0 -85.52694,42.79699,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Hastings Riverwalk</name>
+    <description>Shared-use path, concrete. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.28903,42.65123,0 -85.28906,42.65146,0 -85.28914,42.65155,0 -85.29058,42.65157,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beach to Bayou Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.21229,42.64362,0 -86.21233,42.64359,0 -86.21418,42.6436,0 -86.21755,42.64347,0 -86.22015,42.64343,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beach to Bayou Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.22519,42.64334,0 -86.22625,42.64334,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beach to Bayou Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.22316,42.64337,0 -86.22498,42.64334,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Beach to Bayou Trail</name>
+    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-86.22298,42.64337,0 -86.22033,42.64344,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
     <name>Ada pedestrian bridge over the Thornapple River (new 2026)</name>
     <description>&lt;b&gt;Status (as of Oct 15, 2026):&lt;/b&gt; Open – expected to open July 16, 2026.&lt;br&gt;&lt;b&gt;Facility:&lt;/b&gt; 270-ft pedestrian/bike bridge&lt;br&gt;Links Legacy Park and downtown Ada to the township trail network to the south. Location approximate.&lt;br&gt;&lt;b&gt;Sources:&lt;/b&gt;&lt;br&gt;&lt;a href="https://www.fox17online.com/news/local-news/east-grand-rapids-forest-hills-cascade/as-ada-pedestrian-bridge-nears-opening-businesses-look-ahead-to-increased-foot-traffic"&gt;FOX17 – As Ada pedestrian bridge nears opening (June 2026)&lt;/a&gt;&lt;br&gt;&lt;a href="https://grandriver.network/2026/04/spring-construction/"&gt;Grand River Greenway – 2026 construction season (Apr 2026)&lt;/a&gt;</description>
     <styleUrl>#upd2026-suppt</styleUrl>
