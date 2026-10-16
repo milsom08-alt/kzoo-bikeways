@@ -1,0 +1,43 @@
+name: Run OpenStreetMap queries
+
+# Runs the small Overpass queries in tools/queries/ and adds the results to
+# the `sources` branch (keeping everything already there).
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/queries/**
+      - tools/overpass_query.py
+      - .github/workflows/osm-query.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-sources
+  cancel-in-progress: false
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run queries
+        run: |
+          git clone -q --depth 1 -b sources "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" "$RUNNER_TEMP/out"
+          for q in tools/queries/*.overpassql; do
+            python tools/overpass_query.py "$q" "$RUNNER_TEMP/out/osmq_$(basename "$q" .overpassql).json"
+          done
+      - name: Save to sources branch
+        run: |
+          cd "$RUNNER_TEMP/out"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "OpenStreetMap queries $(date -u +%Y-%m-%dT%H:%MZ)" || echo "no changes"
+          git push -q origin sources
