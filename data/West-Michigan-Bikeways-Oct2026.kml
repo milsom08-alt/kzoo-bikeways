@@ -27098,15 +27098,6 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.48089,42.62429,0 -85.48088,42.62382,0 -85.48047,42.62394,0 -85.47986,42.62394,0 -85.47945,42.6239,0 -85.47914,42.62378,0 -85.47867,42.62336,0 -85.47849,42.62329,0 -85.4781,42.62267,0 -85.47786,42.62248,0 -85.47759,42.62235,0 -85.47691,42.62218,0 -85.4764,42.6219,0 -85.47597,42.62158,0 -85.47483,42.62036,0 -85.47472,42.62012,0 -85.47504,42.61974,0 -85.47507,42.61963,0 -85.47486,42.6187,0 -85.47493,42.6185,0 -85.47521,42.61817,0 -85.47526,42.61804,0</coordinates>
-    </LineString>
-   </Placemark>
-   <Placemark>
-    <name>Shared-use path</name>
-    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
-    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
-    <LineString>
-     <tessellate>1</tessellate>
      <coordinates>-85.50641,42.63152,0 -85.50593,42.63123,0 -85.50587,42.63097,0 -85.5055,42.63017,0 -85.50521,42.62979,0 -85.50497,42.62951,0 -85.5044,42.62915,0 -85.50384,42.62902,0 -85.5033,42.62883,0 -85.50123,42.62868,0 -85.49914,42.62811,0 -85.49883,42.62792,0 -85.49851,42.62752,0 -85.49803,42.62673,0 -85.49772,42.62635,0 -85.49757,42.62598,0 -85.49742,42.62527,0 -85.49696,42.62462,0 -85.49663,42.62433,0 -85.4965,42.62411,0 -85.49647,42.62373,0 -85.4961,42.623,0 -85.49589,42.62237,0 -85.49573,42.62214,0 -85.49573,42.62152,0 -85.49464,42.62117,0 -85.49392,42.62079,0 -85.49308,42.62027,0 -85.49132,42.62027,0 -85.49089,42.62022,0 -85.49077,42.61823,0</coordinates>
     </LineString>
    </Placemark>
@@ -27143,15 +27134,6 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.48157,42.62296,0 -85.48126,42.62294,0 -85.4806,42.62267,0 -85.47857,42.62158,0 -85.47822,42.6213,0 -85.47651,42.61892,0 -85.47591,42.61846,0 -85.47276,42.61644,0 -85.46896,42.61507,0 -85.46876,42.61507,0 -85.46843,42.61496,0 -85.46792,42.61464,0 -85.4677,42.6147,0 -85.46762,42.6146,0 -85.46762,42.61448,0 -85.46705,42.6141,0 -85.46703,42.61399,0 -85.4671,42.61385,0</coordinates>
-    </LineString>
-   </Placemark>
-   <Placemark>
-    <name>Shared-use path</name>
-    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
-    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
-    <LineString>
-     <tessellate>1</tessellate>
      <coordinates>-86.24896,42.40366,0 -86.24898,42.40383,0 -86.252,42.40369,0</coordinates>
     </LineString>
    </Placemark>
@@ -27162,15 +27144,6 @@
     <LineString>
      <tessellate>1</tessellate>
      <coordinates>-86.25288,42.40366,0 -86.25557,42.4036,0 -86.25574,42.40364,0 -86.25625,42.40359,0 -86.25901,42.40359,0</coordinates>
-    </LineString>
-   </Placemark>
-   <Placemark>
-    <name>Shared-use path</name>
-    <description>Shared-use path. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
-    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
-    <LineString>
-     <tessellate>1</tessellate>
-     <coordinates>-85.48593,42.62706,0 -85.48572,42.62688,0 -85.48542,42.62646,0 -85.48449,42.62552,0 -85.48436,42.62532,0 -85.48378,42.62498,0 -85.48336,42.62497,0 -85.48325,42.62489,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27269,7 +27242,7 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.45971,42.70887,0 -85.46034,42.70929,0 -85.46139,42.70978,0 -85.46351,42.71052,0 -85.46435,42.71062,0 -85.46456,42.71074,0 -85.46468,42.71088,0 -85.46496,42.71103,0 -85.46504,42.71128,0</coordinates>
+     <coordinates>-85.45971,42.70887,0 -85.46034,42.70929,0 -85.46139,42.70978,0 -85.46351,42.71052,0 -85.46435,42.71062,0 -85.46456,42.71074,0 -85.46472,42.71091,0 -85.46496,42.71103,0 -85.46502,42.71124,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27530,7 +27503,7 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.46504,42.71128,0 -85.4654,42.71163,0 -85.46541,42.71171,0 -85.4653,42.71182,0 -85.46566,42.7123,0 -85.46583,42.71268,0 -85.46603,42.7128,0 -85.46619,42.71313,0 -85.46617,42.71326,0 -85.46627,42.71351,0 -85.46641,42.71367,0 -85.46637,42.71379,0 -85.46608,42.71388,0 -85.46598,42.71401,0 -85.46596,42.71448,0 -85.46621,42.71714,0 -85.4664,42.71742,0 -85.46667,42.71822,0 -85.46684,42.71839,0 -85.467,42.71869,0 -85.46724,42.71884,0 -85.4674,42.71918,0</coordinates>
+     <coordinates>-85.4651,42.71132,0 -85.46541,42.71162,0 -85.46535,42.71187,0 -85.46553,42.71212,0 -85.4658,42.71268,0 -85.46607,42.71287,0 -85.46614,42.71308,0 -85.46624,42.71315,0 -85.46622,42.71335,0 -85.46641,42.71363,0 -85.46638,42.71378,0 -85.46609,42.71388,0 -85.46601,42.714,0 -85.46598,42.71448,0 -85.46611,42.71646,0 -85.4662,42.71696,0 -85.46667,42.71816,0 -85.4669,42.71844,0 -85.46702,42.71867,0 -85.46727,42.71883,0 -85.46743,42.71918,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27557,7 +27530,7 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.46747,42.71927,0 -85.46758,42.71954,0 -85.46758,42.72025,0 -85.4678,42.72101,0 -85.4678,42.72143,0</coordinates>
+     <coordinates>-85.46748,42.71926,0 -85.46759,42.71954,0 -85.4676,42.72025,0 -85.4678,42.72092,0 -85.46781,42.72142,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27566,7 +27539,7 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.46781,42.72151,0 -85.4678,42.7219,0 -85.46771,42.7223,0</coordinates>
+     <coordinates>-85.46781,42.72151,0 -85.4678,42.7219,0 -85.46771,42.72229,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27575,7 +27548,7 @@
     <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
     <LineString>
      <tessellate>1</tessellate>
-     <coordinates>-85.46771,42.72239,0 -85.46771,42.72285,0</coordinates>
+     <coordinates>-85.46772,42.72239,0 -85.46771,42.72285,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
@@ -27972,6 +27945,42 @@
     <LineString>
      <tessellate>1</tessellate>
      <coordinates>-85.15156,42.33716,0 -85.15144,42.33705,0 -85.15128,42.33706,0 -85.15089,42.33726,0 -85.15054,42.33735,0 -85.14985,42.33726,0 -85.14928,42.33733,0 -85.14903,42.33759,0 -85.14868,42.33775,0 -85.14837,42.33797,0 -85.14784,42.33811,0 -85.14763,42.33834,0 -85.14724,42.33851,0 -85.147,42.33878,0 -85.14672,42.33886,0 -85.14671,42.33925,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Three Rivers Riverwalk Trail</name>
+    <description>Paved riverside path, about 1.2 mi, along the Rocky and St. Joseph rivers. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.63518,41.93562,0 -85.63533,41.93559,0 -85.63537,41.93552,0 -85.63525,41.93553,0 -85.63502,41.93578,0 -85.63498,41.93594,0 -85.63477,41.93615,0 -85.63451,41.93697,0 -85.63448,41.93738,0 -85.63477,41.93764,0 -85.63476,41.93778,0 -85.63462,41.93795,0 -85.63416,41.93804,0 -85.63401,41.93817,0 -85.63366,41.93878,0 -85.6334,41.9391,0 -85.6333,41.9394,0 -85.63321,41.93967,0 -85.63338,41.94,0 -85.63324,41.94035,0 -85.63336,41.94087,0 -85.63344,41.94105,0 -85.63358,41.94117,0 -85.63432,41.94153,0 -85.63439,41.94174,0 -85.63452,41.94183,0 -85.63448,41.94201,0 -85.63486,41.94275,0 -85.63509,41.9428,0 -85.63535,41.94328,0 -85.63655,41.94338,0 -85.63687,41.94353,0 -85.63719,41.94375,0 -85.63753,41.94384,0 -85.63776,41.94413,0 -85.63842,41.94431,0 -85.6387,41.94457,0 -85.63878,41.94514,0 -85.63871,41.94526,0 -85.63805,41.94553,0 -85.63773,41.94555,0 -85.63759,41.94545,0 -85.63767,41.94532,0 -85.63789,41.94517,0 -85.63793,41.94476,0 -85.63813,41.9446,0 -85.63833,41.94429,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Three Rivers Riverwalk Trail</name>
+    <description>Paved riverside path, about 1.2 mi, along the Rocky and St. Joseph rivers. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.63539,41.94329,0 -85.63542,41.94343,0 -85.63527,41.94365,0 -85.63527,41.94382,0 -85.63514,41.94389,0 -85.63515,41.94361,0 -85.63497,41.94315,0 -85.63522,41.94305,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Three Rivers Riverwalk Trail</name>
+    <description>Paved riverside path, about 1.2 mi, along the Rocky and St. Joseph rivers. From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.63516,41.94389,0 -85.63514,41.94392,0 -85.63483,41.94391,0 -85.63456,41.94405,0</coordinates>
+    </LineString>
+   </Placemark>
+   <Placemark>
+    <name>Shared-use path</name>
+    <description>Shared-use path (bike-designated). From OpenStreetMap.&lt;br&gt;&lt;b&gt;Source:&lt;/b&gt; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap contributors (path data, ODbL)&lt;/a&gt;</description>
+    <styleUrl>#line-FF5252-4000-nodesc</styleUrl>
+    <LineString>
+     <tessellate>1</tessellate>
+     <coordinates>-85.67409,41.93322,0 -85.67372,41.93322,0 -85.6731,41.93313,0 -85.67304,41.93269,0 -85.6729,41.93255,0 -85.67269,41.93248,0 -85.66305,41.93245,0 -85.65696,41.93255,0 -85.65565,41.93261,0 -85.65308,41.93264,0 -85.65259,41.9326,0 -85.6523,41.93262,0 -85.65202,41.93269,0 -85.65123,41.9327,0</coordinates>
     </LineString>
    </Placemark>
    <Placemark>
