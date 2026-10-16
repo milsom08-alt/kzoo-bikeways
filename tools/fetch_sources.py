@@ -116,7 +116,9 @@ BERRIEN_QUERY = """[out:json][timeout:300];
 );
 out tags geom;
 relation["route"~"^(bicycle|hiking|foot)$"](41.75,-86.82,42.22,-86.30);
-out body geom;"""
+out body geom;
+way["highway"]["highway"!~"^(footway|path|cycleway|service|track)$"]["name"~"Red Arrow|Lakeshore|Higman|Monte|Lake St|John Beers|Glenlord|Maiden|Sawyer|Shawnee"](41.75,-86.82,42.22,-86.30);
+out tags geom;"""
 
 def fetch_osm_query(query, fname):
     data = urllib.parse.urlencode({"data": query}).encode()
