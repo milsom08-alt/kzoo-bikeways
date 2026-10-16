@@ -20,6 +20,7 @@ SOURCES = [
     ("dnr_railtrails",     "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [16], SW_MI),
     ("dnr_biking",         "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [3], SW_MI),
     ("dnr_whitepine",      "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [16], {"where": "RailGradeName LIKE '%White Pine%'"}),
+    ("calhoun_trails",     "https://services7.arcgis.com/3kp3Io7Dw56fpgk8/arcgis/rest/services/Trail/FeatureServer", [9, 1, 0], None),
     ("kats_existing",      "https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer", None, None),
 ]
 
