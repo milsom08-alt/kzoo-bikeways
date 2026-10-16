@@ -61,11 +61,10 @@ def fetch_layer(base, lid, bbox):
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 OSM_BBOX = "42.74,-86.32,43.32,-85.28"   # Grand Rapids area + Ottawa County (south,west,north,east)
 OSM_QUERY = f"""[out:json][timeout:300];
-(
-  way["highway"~"^(cycleway|path|footway|track|bridleway)$"]["name"]({OSM_BBOX});
-  relation["route"~"^(bicycle|mtb|hiking|foot|fitness_trail)$"]["name"]({OSM_BBOX});
-);
-out tags geom;"""
+way["highway"~"^(cycleway|path|footway|track|bridleway)$"]["name"]({OSM_BBOX});
+out tags geom;
+relation["route"~"^(bicycle|mtb|hiking|foot|fitness_trail)$"]["name"]({OSM_BBOX});
+out body geom;"""
 
 def fetch_osm():
     """Named paths and trail route relations from OpenStreetMap (© OpenStreetMap contributors, ODbL)."""
