@@ -66,6 +66,30 @@ out tags geom;
 relation["route"~"^(bicycle|mtb|hiking|foot|fitness_trail)$"]["name"]({OSM_BBOX});
 out body geom;"""
 
+GAP_BBOX = "42.05,-86.40,42.80,-85.15"   # South Haven - Kalamazoo - Hastings - southern Kent
+GAP_QUERY = f"""[out:json][timeout:300];
+(
+  way["highway"="cycleway"]({GAP_BBOX});
+  way["highway"~"^(path|footway|track)$"]["bicycle"~"^(designated|yes)$"]({GAP_BBOX});
+  way["highway"~"^(path|footway|track|cycleway)$"]["name"]({GAP_BBOX});
+);
+out tags geom;
+relation["route"~"^(bicycle|mtb)$"]({GAP_BBOX});
+out body geom;"""
+
+def fetch_osm_query(query, fname):
+    data = urllib.parse.urlencode({"data": query}).encode()
+    for i, url in enumerate(OVERPASS * 2):
+        try:
+            req = urllib.request.Request(url, data=data, headers={"User-Agent": "kzoo-bikeways-fetch/1.0"})
+            with urllib.request.urlopen(req, timeout=400) as r:
+                j = json.loads(r.read().decode("utf-8"))
+            json.dump(j, open(os.path.join(OUT, fname), "w"))
+            return len(j.get("elements", []))
+        except Exception as e:
+            print("  overpass retry", i + 1, e, file=sys.stderr); time.sleep(20)
+    raise RuntimeError("overpass failed")
+
 def fetch_osm():
     """Named paths and trail route relations from OpenStreetMap (© OpenStreetMap contributors, ODbL)."""
     data = urllib.parse.urlencode({"data": OSM_QUERY}).encode()
@@ -86,6 +110,11 @@ try:
     print("osm_named_trails:", n, "elements")
 except Exception as e:
     summary.append({"file": "osm_named_trails", "error": str(e)}); print("ERROR osm", e, file=sys.stderr)
+try:
+    n = fetch_osm_query(GAP_QUERY, "osm_gap_paths.json"); summary.append({"file": "osm_gap_paths", "elements": n, "license": "ODbL, (c) OpenStreetMap contributors"})
+    print("osm_gap_paths:", n, "elements")
+except Exception as e:
+    summary.append({"file": "osm_gap_paths", "error": str(e)}); print("ERROR osm gap", e, file=sys.stderr)
 for name, base, layers, bbox in SOURCES:
     try:
         svc = get(base, {"f": "json"})
