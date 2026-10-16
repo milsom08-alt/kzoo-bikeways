@@ -19,6 +19,7 @@ SOURCES = [
     ("ottawa_nonmotorized","https://gis.miottawa.org/arcgis/rest/services/HostedServices/NonMotorizedPathways/FeatureServer", None, None),
     ("dnr_railtrails",     "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [16], SW_MI),
     ("dnr_biking",         "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [3], SW_MI),
+    ("dnr_whitepine",      "https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/MapServer", [16], {"where": "RailGradeName LIKE '%White Pine%'"}),
     ("kats_existing",      "https://services8.arcgis.com/iMB25Rg6ZW5ZL5YH/arcgis/rest/services/Existing_Facilities_October_2026/FeatureServer", None, None),
 ]
 
@@ -44,7 +45,9 @@ def fetch_layer(base, lid, bbox):
     while True:
         p = {"where": "1=1", "outFields": "*", "outSR": 4326, "f": "geojson",
              "resultOffset": off, "resultRecordCount": page, "orderByFields": meta.get("objectIdField") or "OBJECTID"}
-        if bbox:
+        if isinstance(bbox, dict):
+            p.update(bbox)
+        elif bbox:
             p.update({"geometry": bbox, "geometryType": "esriGeometryEnvelope", "inSR": 4326, "spatialRel": "esriSpatialRelIntersects"})
         gj = get(f"{base}/{lid}/query", p)
         if "error" in gj:
