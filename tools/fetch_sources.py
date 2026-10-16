@@ -80,6 +80,17 @@ out tags geom;
 relation["route"~"^(bicycle|mtb)$"]({GAP_BBOX});
 out body geom;"""
 
+BC_BBOX = "42.20,-85.33,42.42,-85.03"    # Battle Creek (Linear Park and connecting paths)
+BC_QUERY = f"""[out:json][timeout:300];
+(
+  way["highway"="cycleway"]({BC_BBOX});
+  way["highway"~"^(path|footway|track)$"]["bicycle"~"^(designated|yes)$"]({BC_BBOX});
+  way["highway"~"^(path|footway|track|cycleway)$"]["name"]({BC_BBOX});
+);
+out tags geom;
+relation["route"~"^(bicycle|mtb|hiking|foot)$"]({BC_BBOX});
+out body geom;"""
+
 def fetch_osm_query(query, fname):
     data = urllib.parse.urlencode({"data": query}).encode()
     for i, url in enumerate(OVERPASS * 2):
@@ -118,6 +129,11 @@ try:
     print("osm_gap_paths:", n, "elements")
 except Exception as e:
     summary.append({"file": "osm_gap_paths", "error": str(e)}); print("ERROR osm gap", e, file=sys.stderr)
+try:
+    n = fetch_osm_query(BC_QUERY, "osm_battle_creek.json"); summary.append({"file": "osm_battle_creek", "elements": n, "license": "ODbL, (c) OpenStreetMap contributors"})
+    print("osm_battle_creek:", n, "elements")
+except Exception as e:
+    summary.append({"file": "osm_battle_creek", "error": str(e)}); print("ERROR osm bc", e, file=sys.stderr)
 for name, base, layers, bbox in SOURCES:
     try:
         svc = get(base, {"f": "json"})
