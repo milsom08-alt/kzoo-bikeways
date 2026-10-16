@@ -102,6 +102,11 @@ out tags geom;
 relation["route"~"^(bicycle|hiking|foot)$"](41.85,-85.80,42.08,-85.45);
 out tags;"""
 
+# Roads along the Blue Star Trail corridor (South Haven - Saugatuck), for drawing planned segments
+BLUESTAR_ROADS = """[out:json][timeout:300];
+way["highway"]["name"~"Blue Star|North St|66th|Holland St|Wiley|Baseline|Old Allegan|Lake St|Center St|Washington|Water St|Butler|Culver|Phillips|Ferry|Main St|M-89|124th|122nd|126th"](42.38,-86.30,42.70,-86.15);
+out tags geom;"""
+
 def fetch_osm_query(query, fname):
     data = urllib.parse.urlencode({"data": query}).encode()
     for i, url in enumerate(OVERPASS * 2):
@@ -150,6 +155,11 @@ try:
     print("osm_towns:", n, "elements")
 except Exception as e:
     summary.append({"file": "osm_towns", "error": str(e)}); print("ERROR osm towns", e, file=sys.stderr)
+try:
+    n = fetch_osm_query(BLUESTAR_ROADS, "osm_bluestar_roads.json"); summary.append({"file": "osm_bluestar_roads", "elements": n, "license": "ODbL, (c) OpenStreetMap contributors"})
+    print("osm_bluestar_roads:", n, "elements")
+except Exception as e:
+    summary.append({"file": "osm_bluestar_roads", "error": str(e)}); print("ERROR osm bluestar", e, file=sys.stderr)
 for name, base, layers, bbox in SOURCES:
     try:
         svc = get(base, {"f": "json"})
