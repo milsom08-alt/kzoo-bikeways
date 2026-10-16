@@ -92,6 +92,16 @@ out tags geom;
 relation["route"~"^(bicycle|mtb|hiking|foot)$"]({BC_BBOX});
 out body geom;"""
 
+# Small towns: every non-sidewalk path (named or not), to check for local trails
+TOWNS_QUERY = """[out:json][timeout:300];
+(
+  way["highway"~"^(path|footway|cycleway)$"]["footway"!~"^(sidewalk|crossing|traffic_island)$"](41.85,-85.80,42.08,-85.45);
+  way["highway"~"^(path|footway|cycleway)$"]["footway"!~"^(sidewalk|crossing|traffic_island)$"](42.42,-85.95,42.58,-85.62);
+);
+out tags geom;
+relation["route"~"^(bicycle|hiking|foot)$"](41.85,-85.80,42.08,-85.45);
+out tags;"""
+
 def fetch_osm_query(query, fname):
     data = urllib.parse.urlencode({"data": query}).encode()
     for i, url in enumerate(OVERPASS * 2):
@@ -135,6 +145,11 @@ try:
     print("osm_battle_creek:", n, "elements")
 except Exception as e:
     summary.append({"file": "osm_battle_creek", "error": str(e)}); print("ERROR osm bc", e, file=sys.stderr)
+try:
+    n = fetch_osm_query(TOWNS_QUERY, "osm_towns.json"); summary.append({"file": "osm_towns", "elements": n, "license": "ODbL, (c) OpenStreetMap contributors"})
+    print("osm_towns:", n, "elements")
+except Exception as e:
+    summary.append({"file": "osm_towns", "error": str(e)}); print("ERROR osm towns", e, file=sys.stderr)
 for name, base, layers, bbox in SOURCES:
     try:
         svc = get(base, {"f": "json"})
