@@ -54,6 +54,7 @@
   .jump button:active{background:var(--accent);color:#fff}
   .leaflet-popup-content{font-size:13px;line-height:1.45;max-width:280px}
   .leaflet-popup-content h3{font-size:14px;margin:0 0 4px}
+  .leaflet-popup-content .web{margin:6px 0 4px;font-weight:600}
   .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;color:#fff;margin-bottom:6px}
   .leaflet-control-attribution{font-size:10px}
   button.chip.on{background:var(--accent);color:#fff}
@@ -108,7 +109,7 @@
   <h2>About</h2>
   <p class="note">Kalamazoo region: the Kalamazoo Bicycle Club's K'zoo Region Bikeways Map (Dec 2024, made with RCKC and KATS), updated October 2026 with facilities opened since then and projects under construction or planned through 2030, now with the full Kal-Haven Trail to South Haven.</p>
   <p class="note">Grand Rapids area and Ottawa County: paths, bike lanes, routes and shoulders from GVMC and Ottawa County GIS data, plus new and under-construction projects confirmed in news and agency updates. Gravel and "unmarked OK roads" layers cover the Kalamazoo region only.</p>
-  <p class="note">Tap any line to see its source. Planned dates can slip. Ride at your own risk.</p>
+  <p class="note">Tap any line to see its source and, for major trails, a link to the trail's website. Grand Rapids–area trail names come from OpenStreetMap (© OpenStreetMap contributors), Michigan DNR and Ottawa County data. Planned dates can slip. Ride at your own risk.</p>
   <div class="dl note">
     <a href="data/West-Michigan-Bikeways-Oct2026.kml" download>Download full map KML (Google Earth)</a>
     <a href="data/Kzoo-Map-Oct2026-Layers.zip" download>Kalamazoo region layers for Google My Maps (zip)</a>
@@ -157,6 +158,11 @@
     var t = el('span',{'class':'tag'}, layerName); t.style.background = color; box.appendChild(t);
     box.appendChild(el('h3',{}, f.n || layerName));
     if (f.d && f.d.replace(/\.$/, '') !== f.n){ var d = el('div'); d.innerHTML = f.d; box.appendChild(d); }   // descriptions written for this update only
+    if (f.u){
+      var w = el('div'); w.className = 'web';
+      var wa = el('a', {href: f.u, target: '_blank', rel: 'noopener'}, 'Trail website' + (f.ul ? ' – ' + f.ul : '') + ' ↗');
+      w.appendChild(wa); box.appendChild(w);
+    }
     if (f.s != null && SOURCES[f.s]){
       var p = el('div'); p.appendChild(el('b', {}, 'Source: '));
       var a = el('a', {href: SOURCES[f.s].u, target: '_blank', rel: 'noopener'}, SOURCES[f.s].t); p.appendChild(a); box.appendChild(p);
