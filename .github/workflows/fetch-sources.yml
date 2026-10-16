@@ -1,0 +1,40 @@
+name: Fetch source GIS data
+
+# Downloads the public bikeway layers used to build the map and saves them
+# to the `sources` branch. Runs only when this workflow or the script changes,
+# or when started by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/fetch-sources.yml
+      - tools/fetch_sources.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-sources
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download layers
+        run: python tools/fetch_sources.py "$RUNNER_TEMP/out"
+      - name: Commit to sources branch
+        run: |
+          cd "$RUNNER_TEMP/out"
+          git init -q -b sources
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Source GIS data fetched $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sources
