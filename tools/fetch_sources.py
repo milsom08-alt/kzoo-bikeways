@@ -118,9 +118,18 @@ out tags geom;
 relation["route"~"^(bicycle|hiking|foot)$"](41.75,-86.82,42.22,-86.30);
 out body geom;
 way["highway"]["highway"!~"^(footway|path|cycleway|service|track)$"]["name"~"Red Arrow|Lakeshore|Higman|Monte|Lake St|John Beers|Glenlord|Maiden|Sawyer|Shawnee"](41.75,-86.82,42.22,-86.30);
-out tags geom;"""
+out tags geom;
+way["highway"]["ref"~"M 63"](42.10,-86.48,42.22,-86.40);
+out tags geom;
+way["highway"~"^(footway|path|cycleway)$"](42.12,-86.47,42.17,-86.43);
+out tags geom;
+way["highway"~"^(footway|path|cycleway)$"](41.83,-86.69,41.87,-86.64);
+out tags geom;
+nwr["name"~"Haymarket|Peat"](41.90,-86.60,42.06,-86.48);
+out tags center;"""
 
 def fetch_osm_query(query, fname):
+    time.sleep(15)   # be gentle with the Overpass servers between queries (avoids rate-limit failures)
     data = urllib.parse.urlencode({"data": query}).encode()
     for i, url in enumerate(OVERPASS * 2):
         try:
