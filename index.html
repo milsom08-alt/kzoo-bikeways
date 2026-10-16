@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>K'zoo Region Bikeways Map</title>
-<meta name="description" content="Bikeways in the Kalamazoo, Michigan region – shared-use paths, bike lanes, routes and shoulders, updated October 2026 with new, under-construction and planned projects.">
+<title>West Michigan Bikeways</title>
+<meta name="description" content="Bikeways in Kalamazoo, Grand Rapids and Ottawa County, Michigan – shared-use paths, bike lanes, routes and shoulders, updated October 2026 with new, under-construction and planned projects.">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 <style>
   :root{
@@ -48,13 +48,18 @@
   .note{font-size:13px;color:var(--muted)}
   .note a,.leaflet-popup-content a{color:var(--accent)}
   .dl a{display:block;padding:6px 0}
+  .jump{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+  .jump button{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:6px 11px;
+    font:600 12.5px system-ui,sans-serif;cursor:pointer}
+  .jump button:active{background:var(--accent);color:#fff}
   .leaflet-popup-content{font-size:13px;line-height:1.45;max-width:280px}
   .leaflet-popup-content h3{font-size:14px;margin:0 0 4px}
   .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;color:#fff;margin-bottom:6px}
   .leaflet-control-attribution{font-size:10px}
   button.chip.on{background:var(--accent);color:#fff}
   button.chip{white-space:nowrap}
-  @media (max-width:420px){ .title p{display:none} .title .wide{display:none} button.chip{padding:10px 10px} }
+  .title .narrow{display:none}
+  @media (max-width:420px){ .title p{display:none} .title .wide{display:none} .title .narrow{display:inline} button.chip{padding:10px 10px} .title h1{font-size:15px} .melabel{display:none} header{gap:6px} }
   #routecard{position:fixed;z-index:1002;left:10px;bottom:max(10px,env(safe-area-inset-bottom));width:360px;
     background:var(--panel);backdrop-filter:blur(8px);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px}
   #routecard[hidden]{display:none}
@@ -84,21 +89,30 @@
 <body>
 <div id="map" role="application" aria-label="Map of Kalamazoo region bikeways"></div>
 <header>
-  <div class="title"><h1>K'zoo <span class="wide">Region </span>Bikeways</h1><p>Updated October 2026 · tap a line for details</p></div>
+  <div class="title"><h1><span class="wide">West Michigan</span><span class="narrow">W. MI</span> Bikeways</h1><p>Updated October 2026 · tap a line for details</p></div>
   <div class="spacer"></div>
-  <button class="chip" id="locate" aria-label="Show my location">◎ Me</button>
+  <button class="chip" id="locate" aria-label="Show my location">◎<span class="melabel"> Me</span></button>
   <button class="chip" id="routebtn" aria-pressed="false">Route</button>
   <button class="chip" id="toggle" aria-expanded="false" aria-controls="panel">Layers</button>
 </header>
 <aside id="panel" hidden>
+  <h2>Go to</h2>
+  <div class="jump" id="jump">
+    <button data-v="42.27,-85.59,12">Kalamazoo</button><button data-v="42.21,-85.59,13">Portage</button>
+    <button data-v="42.96,-85.66,12">Grand Rapids</button><button data-v="42.79,-86.11,13">Holland</button>
+    <button data-v="43.06,-86.22,13">Grand Haven</button><button data-v="42.40,-86.24,13">South Haven</button>
+  </div>
   <label class="toggle"><input type="checkbox" id="onlynew"> Show only changes since Dec 2024</label>
   <h2>Existing</h2><div id="existing"></div>
   <h2>Coming</h2><div id="coming"></div>
   <h2>About</h2>
-  <p class="note">Based on the Kalamazoo Bicycle Club's K'zoo Region Bikeways Map (Dec 2024), made with RCKC and KATS. The October 2026 update adds facilities opened since then and projects under construction or planned through 2030, each with its status and sources. Planned dates can slip. Ride at your own risk.</p>
+  <p class="note">Kalamazoo region: the Kalamazoo Bicycle Club's K'zoo Region Bikeways Map (Dec 2024, made with RCKC and KATS), updated October 2026 with facilities opened since then and projects under construction or planned through 2030, now with the full Kal-Haven Trail to South Haven.</p>
+  <p class="note">Grand Rapids area and Ottawa County: paths, bike lanes, routes and shoulders from GVMC and Ottawa County GIS data, plus new and under-construction projects confirmed in news and agency updates. Gravel and "unmarked OK roads" layers cover the Kalamazoo region only.</p>
+  <p class="note">Tap any line to see its source. Planned dates can slip. Ride at your own risk.</p>
   <div class="dl note">
-    <a href="data/Kzoo-Region-Bikeways-Map-Oct2026.kml" download>Download KML (Google Earth)</a>
-    <a href="data/Kzoo-Map-Oct2026-Layers.zip" download>Download layers for Google My Maps (zip)</a>
+    <a href="data/West-Michigan-Bikeways-Oct2026.kml" download>Download full map KML (Google Earth)</a>
+    <a href="data/Kzoo-Map-Oct2026-Layers.zip" download>Kalamazoo region layers for Google My Maps (zip)</a>
+    <a href="data/GR-Ottawa-Map-Oct2026-Layers.zip" download>Grand Rapids &amp; Ottawa layers for Google My Maps (zip)</a>
   </div>
 </aside>
 <section id="routecard" hidden aria-label="Route planner">
@@ -142,7 +156,11 @@
     var box = el('div');
     var t = el('span',{'class':'tag'}, layerName); t.style.background = color; box.appendChild(t);
     box.appendChild(el('h3',{}, f.n || layerName));
-    if (f.d){ var d = el('div'); d.innerHTML = f.d; box.appendChild(d); }   // descriptions written for this update only
+    if (f.d && f.d.replace(/\.$/, '') !== f.n){ var d = el('div'); d.innerHTML = f.d; box.appendChild(d); }   // descriptions written for this update only
+    if (f.s != null && SOURCES[f.s]){
+      var p = el('div'); p.appendChild(el('b', {}, 'Source: '));
+      var a = el('a', {href: SOURCES[f.s].u, target: '_blank', rel: 'noopener'}, SOURCES[f.s].t); p.appendChild(a); box.appendChild(p);
+    }
     return box;
   }
 
@@ -153,7 +171,9 @@
     L.popup().setLatLng(e.latlng).setContent(popup(f, Ly.name, f.c)).openOn(map);
   }
 
+  var SOURCES = [];
   fetch('data/bikeways.json').then(function(r){ return r.json(); }).then(function(data){
+    SOURCES = data.sources || [];
     var bounds = L.latLngBounds();
     data.layers.forEach(function(Ly){
       var coming = COMING.test(Ly.name);
@@ -198,7 +218,12 @@
     });
     applyZoomStyle();
     render();
-    if (window.innerWidth > 640 && bounds.isValid()) map.fitBounds(bounds,{padding:[20,20]});
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('kzView') || 'null'); } catch(e) {}
+    if (saved && saved.length === 3) map.setView([saved[0], saved[1]], saved[2]);
+    else if (window.innerWidth > 640 && bounds.isValid()) map.fitBounds(bounds,{padding:[20,20]});
+    map.on('moveend', function(){ var c = map.getCenter();
+      try { localStorage.setItem('kzView', JSON.stringify([+c.lat.toFixed(4), +c.lng.toFixed(4), map.getZoom()])); } catch(e) {} });
   }).catch(function(){
     alert('Could not load the map data. Please reload the page.');
   });
@@ -243,6 +268,10 @@
     });
   }
   map.on('zoomend', applyZoomStyle);
+  document.querySelectorAll('#jump button').forEach(function(b){ b.addEventListener('click', function(){
+    var v = b.getAttribute('data-v').split(',').map(Number); map.setView([v[0], v[1]], v[2]);
+    if (window.innerWidth <= 640) setPanel(false);
+  }); });
   document.getElementById('onlynew').addEventListener('change', function(e){ onlyNew = e.target.checked; render(); });
 
   var panel = document.getElementById('panel'), tg = document.getElementById('toggle');
